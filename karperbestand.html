@@ -14,27 +14,12 @@
       theme: {
         extend: {
           colors: {
-            primary: '#2D5016',
-            secondary: '#4A7C2E',
-            accent: '#1B6B93',
-            cta: '#D97706',
-            'bg-main': '#FAFAF5',
-            'card-bg': '#FFFFFF',
-            'text-main': '#1A1A1A',
-            'text-muted': '#6B7280',
-            'footer-bg': '#1C3409',
+            primary: '#2D5016', secondary: '#4A7C2E', accent: '#1B6B93', cta: '#D97706',
+            'bg-main': '#FAFAF5', 'card-bg': '#FFFFFF', 'text-main': '#1A1A1A', 'text-muted': '#6B7280', 'footer-bg': '#1C3409',
           },
-          fontFamily: {
-            heading: ['Lora', 'serif'],
-            body: ['Raleway', 'sans-serif'],
-          },
-          boxShadow: {
-            'soft': '0 2px 8px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.04)',
-            'soft-lg': '0 4px 16px rgba(0,0,0,0.10), 0 8px 32px rgba(0,0,0,0.06)',
-          },
-          borderRadius: {
-            'card': '12px',
-          }
+          fontFamily: { heading: ['Lora', 'serif'], body: ['Raleway', 'sans-serif'] },
+          boxShadow: { 'soft': '0 2px 8px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.04)', 'soft-lg': '0 4px 16px rgba(0,0,0,0.10), 0 8px 32px rgba(0,0,0,0.06)' },
+          borderRadius: { 'card': '12px' }
         }
       }
     }
@@ -114,156 +99,116 @@
     </div>
   </section>
 
-  <!-- Karpers Grid -->
+  <!-- Karpers met foto's -->
   <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary text-center mb-12">Onze bekende karpers</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <!-- Single Scale -->
-        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
-          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <!-- Single Scale (geen eigen foto op de bronsite, gebruikt header) -->
+        <div class="bg-bg-main rounded-card shadow-soft overflow-hidden hover:shadow-soft-lg transition-all duration-200 border border-secondary/10 cursor-pointer" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen85.jpg" alt="Single Scale — karper VC De Meeren" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-5">
+            <h3 class="font-heading font-semibold text-lg text-primary">Single Scale</h3>
           </div>
-          <h3 class="font-heading font-semibold text-lg text-primary mb-1">Single Scale</h3>
-          <p class="font-body text-text-muted text-sm">Een bijzondere spiegel met een herkenbaar schubpatroon.</p>
         </div>
 
-        <!-- De oude rijen -->
-        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
-          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <!-- De Oude Rijen -->
+        <div class="bg-bg-main rounded-card shadow-soft overflow-hidden hover:shadow-soft-lg transition-all duration-200 border border-secondary/10 cursor-pointer" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen11.jpg" alt="De Oude Rijen — karper VC De Meeren" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-5">
+            <h3 class="font-heading font-semibold text-lg text-primary">De Oude Rijen</h3>
           </div>
-          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Oude Rijen</h3>
-          <p class="font-body text-text-muted text-sm">Een van de oorspronkelijke bewoners van het water.</p>
         </div>
 
         <!-- Scar -->
-        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
-          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <div class="bg-bg-main rounded-card shadow-soft overflow-hidden hover:shadow-soft-lg transition-all duration-200 border border-secondary/10 cursor-pointer" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen25.jpg" alt="Scar — karper VC De Meeren" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-5">
+            <h3 class="font-heading font-semibold text-lg text-primary">Scar</h3>
           </div>
-          <h3 class="font-heading font-semibold text-lg text-primary mb-1">Scar</h3>
-          <p class="font-body text-text-muted text-sm">Herkenbaar aan een kenmerkend litteken.</p>
         </div>
 
-        <!-- De dooie -->
-        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
-          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <!-- De Dooie -->
+        <div class="bg-bg-main rounded-card shadow-soft overflow-hidden hover:shadow-soft-lg transition-all duration-200 border border-secondary/10 cursor-pointer" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen80.jpeg" alt="De Dooie — karper VC De Meeren" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-5">
+            <h3 class="font-heading font-semibold text-lg text-primary">De Dooie</h3>
           </div>
-          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Dooie</h3>
-          <p class="font-body text-text-muted text-sm">Een prominente bewoner met een veelzeggende naam.</p>
         </div>
 
-        <!-- De benelux spiegel -->
-        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
-          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <!-- De Benelux Spiegel -->
+        <div class="bg-bg-main rounded-card shadow-soft overflow-hidden hover:shadow-soft-lg transition-all duration-200 border border-secondary/10 cursor-pointer" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen85.jpg" alt="De Benelux Spiegel — karper VC De Meeren" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-5">
+            <h3 class="font-heading font-semibold text-lg text-primary">De Benelux Spiegel</h3>
           </div>
-          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Benelux Spiegel</h3>
-          <p class="font-body text-text-muted text-sm">Een prachtige spiegelkarper van formaat.</p>
         </div>
 
-        <!-- De pseudo benelux -->
-        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
-          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <!-- De Pseudo Benelux -->
+        <div class="bg-bg-main rounded-card shadow-soft overflow-hidden hover:shadow-soft-lg transition-all duration-200 border border-secondary/10 cursor-pointer" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen57.jpg" alt="De Pseudo Benelux — karper VC De Meeren" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-5">
+            <h3 class="font-heading font-semibold text-lg text-primary">De Pseudo Benelux</h3>
           </div>
-          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Pseudo Benelux</h3>
-          <p class="font-body text-text-muted text-sm">Lijkt op de Benelux Spiegel, maar is een eigen vis.</p>
         </div>
 
-        <!-- De mooie -->
-        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
-          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <!-- De Mooie -->
+        <div class="bg-bg-main rounded-card shadow-soft overflow-hidden hover:shadow-soft-lg transition-all duration-200 border border-secondary/10 cursor-pointer" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen83.jpg" alt="De Mooie — karper VC De Meeren" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-5">
+            <h3 class="font-heading font-semibold text-lg text-primary">De Mooie</h3>
           </div>
-          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Mooie</h3>
-          <p class="font-body text-text-muted text-sm">De naam zegt het al — een bijzonder mooie karper.</p>
         </div>
 
-        <!-- Het mannetje -->
-        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
-          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <!-- Het Mannetje -->
+        <div class="bg-bg-main rounded-card shadow-soft overflow-hidden hover:shadow-soft-lg transition-all duration-200 border border-secondary/10 cursor-pointer" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen3.jpg" alt="Het Mannetje — karper VC De Meeren" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-5">
+            <h3 class="font-heading font-semibold text-lg text-primary">Het Mannetje</h3>
           </div>
-          <h3 class="font-heading font-semibold text-lg text-primary mb-1">Het Mannetje</h3>
-          <p class="font-body text-text-muted text-sm">Een stoere karper met karakter.</p>
         </div>
 
-        <!-- De vinvis -->
-        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
-          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <!-- De Vinvis -->
+        <div class="bg-bg-main rounded-card shadow-soft overflow-hidden hover:shadow-soft-lg transition-all duration-200 border border-secondary/10 cursor-pointer" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen10.jpg" alt="De Vinvis — karper VC De Meeren" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-5">
+            <h3 class="font-heading font-semibold text-lg text-primary">De Vinvis</h3>
           </div>
-          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Vinvis</h3>
-          <p class="font-body text-text-muted text-sm">Herkenbaar aan kenmerkende vinnen.</p>
         </div>
 
-        <!-- De streep -->
-        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
-          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <!-- De Streep -->
+        <div class="bg-bg-main rounded-card shadow-soft overflow-hidden hover:shadow-soft-lg transition-all duration-200 border border-secondary/10 cursor-pointer" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen45.jpg" alt="De Streep — karper VC De Meeren" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-5">
+            <h3 class="font-heading font-semibold text-lg text-primary">De Streep</h3>
           </div>
-          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Streep</h3>
-          <p class="font-body text-text-muted text-sm">Opvallende streepmarkering langs het lichaam.</p>
         </div>
 
-        <!-- De barbeque spiegel -->
-        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
-          <div class="w-12 h-12 bg-cta/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+        <!-- De Barbeque Spiegel -->
+        <div class="bg-bg-main rounded-card shadow-soft overflow-hidden hover:shadow-soft-lg transition-all duration-200 border border-secondary/10 cursor-pointer" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen46.jpg" alt="De Barbeque Spiegel — karper VC De Meeren" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-5">
+            <h3 class="font-heading font-semibold text-lg text-primary">De Barbeque Spiegel</h3>
           </div>
-          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Barbeque Spiegel</h3>
-          <p class="font-body text-text-muted text-sm">Een iconische spiegel van het water.</p>
         </div>
 
         <!-- Willem -->
-        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
-          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <div class="bg-bg-main rounded-card shadow-soft overflow-hidden hover:shadow-soft-lg transition-all duration-200 border border-secondary/10 cursor-pointer" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/bbqspiegel.jpg" alt="Willem — karper VC De Meeren" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-5">
+            <h3 class="font-heading font-semibold text-lg text-primary">Willem</h3>
           </div>
-          <h3 class="font-heading font-semibold text-lg text-primary mb-1">Willem</h3>
-          <p class="font-body text-text-muted text-sm">Een herkenbare karper met een eigen naam.</p>
         </div>
 
         <!-- Overbeet -->
-        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
-          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <div class="bg-bg-main rounded-card shadow-soft overflow-hidden hover:shadow-soft-lg transition-all duration-200 border border-secondary/10 cursor-pointer" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/willem.jpg" alt="Overbeet — karper VC De Meeren" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-5">
+            <h3 class="font-heading font-semibold text-lg text-primary">Overbeet</h3>
           </div>
-          <h3 class="font-heading font-semibold text-lg text-primary mb-1">Overbeet</h3>
-          <p class="font-body text-text-muted text-sm">Genoemd naar een opvallend kenmerk aan de bek.</p>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section class="py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary text-center mb-12">Vangsten</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div class="rounded-card overflow-hidden shadow-soft cursor-pointer hover:shadow-soft-lg transition-all duration-200" onclick="openLightbox(this.querySelector('img'))">
-          <img src="images/karpervissen3.jpg" alt="Karper vangst" class="w-full h-48 object-cover" loading="lazy">
-        </div>
-        <div class="rounded-card overflow-hidden shadow-soft cursor-pointer hover:shadow-soft-lg transition-all duration-200" onclick="openLightbox(this.querySelector('img'))">
-          <img src="images/karpervissen10.jpg" alt="Karper vangst" class="w-full h-48 object-cover" loading="lazy">
-        </div>
-        <div class="rounded-card overflow-hidden shadow-soft cursor-pointer hover:shadow-soft-lg transition-all duration-200" onclick="openLightbox(this.querySelector('img'))">
-          <img src="images/karpervissen11.jpg" alt="Karper vangst" class="w-full h-48 object-cover" loading="lazy">
-        </div>
-        <div class="rounded-card overflow-hidden shadow-soft cursor-pointer hover:shadow-soft-lg transition-all duration-200" onclick="openLightbox(this.querySelector('img'))">
-          <img src="images/karpervissen25.jpg" alt="Karper vangst" class="w-full h-48 object-cover" loading="lazy">
-        </div>
-        <div class="rounded-card overflow-hidden shadow-soft cursor-pointer hover:shadow-soft-lg transition-all duration-200" onclick="openLightbox(this.querySelector('img'))">
-          <img src="images/karpervissen80.jpeg" alt="Karper vangst" class="w-full h-48 object-cover" loading="lazy">
-        </div>
-        <div class="rounded-card overflow-hidden shadow-soft cursor-pointer hover:shadow-soft-lg transition-all duration-200" onclick="openLightbox(this.querySelector('img'))">
-          <img src="images/bbqspiegel.jpg" alt="De Barbeque Spiegel" class="w-full h-48 object-cover" loading="lazy">
-        </div>
       </div>
     </div>
   </section>
@@ -288,7 +233,7 @@
             <img src="images/header.png" alt="VC De Meeren logo" class="h-10 w-auto" loading="lazy">
             <span class="font-heading font-bold text-lg">VC De Meeren</span>
           </div>
-          <p class="font-body text-white/70 text-sm leading-relaxed">Vissen zoals vissen behoort te zijn. Een prachtig syndicaat water verscholen in het Brabantse landschap.</p>
+          <p class="font-body text-white/70 text-sm leading-relaxed">Vissen zoals vissen behoort te zijn.</p>
         </div>
         <div>
           <h4 class="font-heading font-semibold text-base mb-4">Pagina's</h4>
@@ -306,10 +251,6 @@
             <li class="flex items-start gap-2">
               <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
               Uilweg, 5453 JD Langenboom
-            </li>
-            <li class="flex items-start gap-2">
-              <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              <a href="contact.html" class="hover:text-cta transition-all duration-200 cursor-pointer">Neem contact op</a>
             </li>
           </ul>
         </div>
@@ -329,12 +270,9 @@
   </div>
 
   <script>
-    // Mobile menu
     document.getElementById('menu-btn').addEventListener('click', () => {
       document.getElementById('mobile-menu').classList.toggle('hidden');
     });
-
-    // Lightbox
     function openLightbox(img) {
       const lb = document.getElementById('lightbox');
       document.getElementById('lightbox-img').src = img.src;
@@ -349,6 +287,5 @@
     }
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
   </script>
-
 </body>
 </html>

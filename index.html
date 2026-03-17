@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VC De Meeren — Vissen zoals vissen behoort te zijn</title>
+  <meta name="description" content="VC De Meeren is een prachtig syndicaat water van 13 hectare verscholen in het Brabantse landschap bij Langenboom/Mill. Karpervissen en witvissen in een unieke omgeving.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2D5016',
+            secondary: '#4A7C2E',
+            accent: '#1B6B93',
+            cta: '#D97706',
+            'bg-main': '#FAFAF5',
+            'card-bg': '#FFFFFF',
+            'text-main': '#1A1A1A',
+            'text-muted': '#6B7280',
+            'footer-bg': '#1C3409',
+          },
+          fontFamily: {
+            heading: ['Lora', 'serif'],
+            body: ['Raleway', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft': '0 2px 8px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.04)',
+            'soft-lg': '0 4px 16px rgba(0,0,0,0.10), 0 8px 32px rgba(0,0,0,0.06)',
+          },
+          borderRadius: {
+            'card': '12px',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Raleway', sans-serif; background-color: #FAFAF5; color: #1A1A1A; }
+    h1, h2, h3, h4 { font-family: 'Lora', serif; }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  </style>
+  <script defer src="https://analytics.code-lieshout.nl/prikkel" data-website-id="da86629e-7202-473b-8f3f-7fbb4ee39190"></script>
+</head>
+<body class="bg-bg-main">
+
+  <!-- Navigation -->
+  <nav class="bg-primary shadow-soft sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+          <img src="images/header.png" alt="VC De Meeren logo" class="h-10 w-auto" loading="lazy">
+          <span class="font-heading font-bold text-white text-lg hidden sm:block">VC De Meeren</span>
+        </a>
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center gap-1">
+          <a href="index.html" class="text-white hover:text-cta transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Home</a>
+          <a href="over-ons.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Over Ons</a>
+          <a href="het-meer.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Het Meer</a>
+          <a href="geschiedenis.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Geschiedenis</a>
+          <a href="hengelsport.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Hengelsport</a>
+          <a href="karperbestand.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Karperbestand</a>
+          <a href="wedstrijdvissen.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Wedstrijden</a>
+          <a href="stekken.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Stekken</a>
+          <a href="contact.html" class="ml-2 bg-cta hover:bg-amber-600 text-white px-4 py-2 rounded-card text-sm font-semibold transition-all duration-200 cursor-pointer">Vergunning</a>
+        </div>
+        <!-- Mobile menu button -->
+        <button id="menu-btn" class="lg:hidden text-white p-2 rounded-lg hover:bg-secondary/40 transition-all duration-200 cursor-pointer" aria-label="Menu openen">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-primary border-t border-secondary/30">
+      <div class="px-4 py-3 space-y-1">
+        <a href="index.html" class="block text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Home</a>
+        <a href="over-ons.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Over Ons</a>
+        <a href="het-meer.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Het Meer</a>
+        <a href="geschiedenis.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Geschiedenis</a>
+        <a href="hengelsport.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Hengelsport</a>
+        <a href="karperbestand.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Karperbestand</a>
+        <a href="wedstrijdvissen.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Wedstrijden</a>
+        <a href="stekken.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Stekken</a>
+        <a href="contact.html" class="block bg-cta text-white px-3 py-2 rounded-card text-sm font-semibold text-center mt-2 hover:bg-amber-600 transition-all duration-200 cursor-pointer">Vergunning aanvragen</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <img src="images/sfeer4.jpg" alt="Het meer van VC De Meeren in Langenboom" loading="eager" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <p class="text-cta font-body font-semibold text-sm uppercase tracking-widest mb-4">VC De Meeren — Langenboom, Noord-Brabant</p>
+      <h1 class="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white mb-6 leading-tight">
+        Vissen zoals vissen<br>behoort te zijn
+      </h1>
+      <p class="font-body text-white/90 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+        Een prachtig syndicaat water verscholen in het Brabantse landschap. Hier kunt u weer vissen zoals vissen behoort te zijn.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="bg-cta hover:bg-amber-600 text-white font-body font-semibold px-8 py-4 rounded-card transition-all duration-200 cursor-pointer shadow-soft-lg text-lg">
+          Vergunning aanvragen
+        </a>
+        <a href="het-meer.html" class="bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/40 text-white font-body font-semibold px-8 py-4 rounded-card transition-all duration-200 cursor-pointer text-lg">
+          Ontdek het meer
+        </a>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 animate-bounce">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="bg-primary py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+        <div class="text-white">
+          <div class="font-heading font-bold text-3xl lg:text-4xl text-cta mb-2">13 ha</div>
+          <div class="font-body text-white/80 text-sm">Wateroppervlak</div>
+        </div>
+        <div class="text-white">
+          <div class="font-heading font-bold text-3xl lg:text-4xl text-cta mb-2">2010</div>
+          <div class="font-body text-white/80 text-sm">Opgericht</div>
+        </div>
+        <div class="text-white">
+          <div class="font-heading font-bold text-3xl lg:text-4xl text-cta mb-2">4.5/5</div>
+          <div class="font-body text-white/80 text-sm flex items-center justify-center gap-1">
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            Google rating
+          </div>
+        </div>
+        <div class="text-white">
+          <div class="font-heading font-bold text-3xl lg:text-4xl text-cta mb-2">19 m</div>
+          <div class="font-body text-white/80 text-sm">Maximale diepte</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Over sectie -->
+  <section class="py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-secondary font-body font-semibold text-sm uppercase tracking-widest mb-3">Over ons</p>
+          <h2 class="font-heading font-bold text-3xl lg:text-4xl text-primary mb-6">VC De Meeren</h2>
+          <p class="font-body text-text-muted text-lg leading-relaxed mb-6">
+            Met de gedachte <em>'Vissen zoals vissen behoort te zijn'</em> in het achterhoofd heeft een groep enthousiaste vissers op 10 oktober 2010 Vis Club De Meeren opgericht. Het doel: weer <em>back to nature</em> gaan. Een visclub waar gezelligheid hoog in het vaandel staat.
+          </p>
+          <p class="font-body text-text-muted leading-relaxed mb-8">
+            VC De Meeren bestaat uit een bestuur van 5 leden, een witviscommissie, 35 witvisvergunninghouders en 26 karpervisvergunninghouders.
+          </p>
+          <a href="over-ons.html" class="inline-flex items-center gap-2 bg-primary hover:bg-secondary text-white font-body font-semibold px-6 py-3 rounded-card transition-all duration-200 cursor-pointer">
+            Lees meer over ons
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="relative">
+          <img src="images/hengelsErik.jpg" alt="Visser aan het meer van VC De Meeren" loading="lazy" class="rounded-card shadow-soft-lg w-full object-cover h-80 lg:h-96">
+          <div class="absolute -bottom-4 -left-4 bg-cta text-white p-4 rounded-card shadow-soft font-body">
+            <div class="font-bold text-lg">61 leden</div>
+            <div class="text-sm opacity-90">Actieve vergunninghouders</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Het Meer Preview -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="order-2 lg:order-1">
+          <img src="images/wind2.jpg" alt="Het meer van VC De Meeren bij wind" loading="lazy" class="rounded-card shadow-soft-lg w-full object-cover h-80 lg:h-96">
+        </div>
+        <div class="order-1 lg:order-2">
+          <p class="text-accent font-body font-semibold text-sm uppercase tracking-widest mb-3">Het water</p>
+          <h2 class="font-heading font-bold text-3xl lg:text-4xl text-primary mb-6">Een uniek meer in Brabant</h2>
+          <p class="font-body text-text-muted text-lg leading-relaxed mb-6">
+            Het gebied is 13 hectare groot met een wateroppervlak van 11 hectare. Een variërend bodemverloop met plateaus en steile taludranden, dieptes tot 19 meter en een zichtafstand van 4 meter in het kraakheldere water.
+          </p>
+          <div class="grid grid-cols-2 gap-4 mb-8">
+            <div class="bg-bg-main rounded-card p-4 shadow-soft">
+              <div class="text-accent font-heading font-bold text-2xl">11 ha</div>
+              <div class="text-text-muted text-sm font-body">Wateroppervlak</div>
+            </div>
+            <div class="bg-bg-main rounded-card p-4 shadow-soft">
+              <div class="text-accent font-heading font-bold text-2xl">4 m</div>
+              <div class="text-text-muted text-sm font-body">Zichtdiepte</div>
+            </div>
+            <div class="bg-bg-main rounded-card p-4 shadow-soft">
+              <div class="text-accent font-heading font-bold text-2xl">24 kg</div>
+              <div class="text-text-muted text-sm font-body">Zwaarste vangst</div>
+            </div>
+            <div class="bg-bg-main rounded-card p-4 shadow-soft">
+              <div class="text-accent font-heading font-bold text-2xl">10 kg</div>
+              <div class="text-text-muted text-sm font-body">Gemiddeld karper</div>
+            </div>
+          </div>
+          <a href="het-meer.html" class="inline-flex items-center gap-2 bg-accent hover:bg-blue-700 text-white font-body font-semibold px-6 py-3 rounded-card transition-all duration-200 cursor-pointer">
+            Meer over het meer
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hengelsport Cards -->
+  <section class="py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-secondary font-body font-semibold text-sm uppercase tracking-widest mb-3">Hengelsport</p>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-primary">Vissen aan het meer</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Karpervissen -->
+        <div class="bg-card-bg rounded-card shadow-soft overflow-hidden hover:shadow-soft-lg transition-all duration-200 cursor-pointer group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="images/karpervissen25.jpg" alt="Karpervissen bij VC De Meeren" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="absolute bottom-4 left-4">
+              <span class="bg-primary text-white text-xs font-body font-semibold px-3 py-1 rounded-full">Syndicaat water</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-xl text-primary mb-3">Karpervissen</h3>
+            <p class="font-body text-text-muted leading-relaxed mb-4">
+              Mooie spiegels, sterke schubkarpers en een verdwaalde ghostkarper. Gemiddeld 10 kilo, topvissen boven de 20 kilo. Ervaring vereist.
+            </p>
+            <div class="flex items-center gap-2 text-sm text-text-muted font-body mb-4">
+              <svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+              </svg>
+              Momenteel wachtlijst — aanmelden t/m 2027-2028
+            </div>
+            <a href="hengelsport.html" class="inline-flex items-center gap-2 text-primary hover:text-secondary font-body font-semibold transition-all duration-200 cursor-pointer">
+              Lees meer
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- Witvissen -->
+        <div class="bg-card-bg rounded-card shadow-soft overflow-hidden hover:shadow-soft-lg transition-all duration-200 cursor-pointer group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="images/google/google_place_2.jpg" alt="Witvissen bij VC De Meeren" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="absolute bottom-4 left-4">
+              <span class="bg-accent text-white text-xs font-body font-semibold px-3 py-1 rounded-full">Open voor aanmelding</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-xl text-primary mb-3">Witvissen</h3>
+            <p class="font-body text-text-muted leading-relaxed mb-4">
+              Mooi bestand aan voorn van groot formaat (200-300 gram). Zonnebaars goed vertegenwoordigd. Jaarvergunning slechts €20,- + borg sleutels.
+            </p>
+            <div class="flex items-center gap-2 text-sm text-text-muted font-body mb-4">
+              <svg class="w-4 h-4 text-secondary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              Aanmelden via e-mail nog mogelijk
+            </div>
+            <a href="hengelsport.html" class="inline-flex items-center gap-2 text-primary hover:text-secondary font-body font-semibold transition-all duration-200 cursor-pointer">
+              Lees meer
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-secondary font-body font-semibold text-sm uppercase tracking-widest mb-3">Google Reviews</p>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-primary mb-4">Wat leden zeggen</h2>
+        <div class="flex items-center justify-center gap-2">
+          <div class="flex gap-0.5">
+            <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="font-heading font-bold text-2xl text-primary">4.5</span>
+          <span class="font-body text-text-muted">op Google</span>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Review 1 -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6">
+          <div class="flex items-center gap-1 mb-3">
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-gray-300" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="font-body text-text-main italic mb-4 leading-relaxed">"Mooie plek om te vissen en tot rust te komen"</p>
+          <p class="font-body font-semibold text-sm text-primary">Annet & Gerrit van der Burgt</p>
+        </div>
+        <!-- Review 2 -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6">
+          <div class="flex items-center gap-1 mb-3">
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="font-body text-text-main italic mb-4 leading-relaxed">"Een fantastisch water met een gevarieerd bodemverloop en een prachtig bestand aan karper."</p>
+          <p class="font-body font-semibold text-sm text-primary">Frank Avezaat</p>
+        </div>
+        <!-- Review 3 -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6">
+          <div class="flex items-center gap-1 mb-3">
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="font-body text-text-main italic mb-4 leading-relaxed">"Mooi water achter gesloten hek."</p>
+          <p class="font-body font-semibold text-sm text-primary">Cliff Tophoven</p>
+        </div>
+        <!-- Review 4 -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6">
+          <div class="flex items-center gap-1 mb-3">
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="font-body text-text-main italic mb-4 leading-relaxed">"goed viswater"</p>
+          <p class="font-body font-semibold text-sm text-primary">Peter de Kleijn</p>
+        </div>
+        <!-- Review 5 -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6">
+          <div class="flex items-center gap-1 mb-3">
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-gray-300" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="font-body text-text-main italic mb-4 leading-relaxed">"Klein maar mooi vismeer."</p>
+          <p class="font-body font-semibold text-sm text-primary">Murat Fidan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4 bg-primary">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="font-heading font-bold text-3xl lg:text-4xl text-white mb-6">Klaar om te vissen?</h2>
+      <p class="font-body text-white/80 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+        Witvisvergunningen zijn beschikbaar via aanmelding per e-mail. Karpervissen is momenteel vol — aanmelden voor de wachtlijst voor 2027-2028.
+      </p>
+      <a href="contact.html" class="inline-flex items-center gap-2 bg-cta hover:bg-amber-600 text-white font-body font-semibold px-10 py-4 rounded-card transition-all duration-200 cursor-pointer shadow-soft-lg text-lg">
+        Vergunning aanvragen
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-footer-bg text-white py-12 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <img src="images/header.png" alt="VC De Meeren logo" class="h-12 w-auto mb-4" loading="lazy">
+          <p class="font-body text-white/70 text-sm leading-relaxed">Een prachtig syndicaat water in het hart van Brabant. Vissen zoals vissen behoort te zijn.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Navigatie</h4>
+          <ul class="space-y-2 font-body text-sm">
+            <li><a href="over-ons.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Over Ons</a></li>
+            <li><a href="het-meer.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Het Meer</a></li>
+            <li><a href="hengelsport.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Hengelsport</a></li>
+            <li><a href="karperbestand.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Karperbestand</a></li>
+            <li><a href="wedstrijdvissen.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Wedstrijdvissen</a></li>
+            <li><a href="reglement.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Reglement</a></li>
+            <li><a href="stekken.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Stekken</a></li>
+            <li><a href="contact.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Contact</h4>
+          <div class="space-y-2 font-body text-sm text-white/70">
+            <div class="flex items-start gap-2">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              <span>Uilweg, 5441 Mill<br>Gemeente Mill en Sint Hubert</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 flex-shrink-0 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              <a href="mailto:info@de-meeren.nl" class="hover:text-cta transition-all duration-200 cursor-pointer">info@de-meeren.nl</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 flex-shrink-0 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              </svg>
+              <span>KvK: 50983784</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 font-body text-sm text-white/50">
+        <span>&copy; 2026 VC De Meeren. Alle rechten voorbehouden.</span>
+        <span>Gebouwd door <a href="https://www.code-lieshout.nl" class="text-cta hover:text-amber-400 transition-all duration-200 cursor-pointer">Code Lieshout</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

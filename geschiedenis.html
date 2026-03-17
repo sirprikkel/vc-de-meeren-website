@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geschiedenis — VC De Meeren</title>
+  <meta name="description" content="De geschiedenis van het meer van VC De Meeren. Van zandgroeve in de jaren '40 tot prachtig karperwater in Langenboom, Noord-Brabant.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2D5016', secondary: '#4A7C2E', accent: '#1B6B93',
+            cta: '#D97706', 'bg-main': '#FAFAF5', 'card-bg': '#FFFFFF',
+            'text-main': '#1A1A1A', 'text-muted': '#6B7280', 'footer-bg': '#1C3409',
+          },
+          fontFamily: { heading: ['Lora', 'serif'], body: ['Raleway', 'sans-serif'] },
+          boxShadow: {
+            'soft': '0 2px 8px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.04)',
+            'soft-lg': '0 4px 16px rgba(0,0,0,0.10), 0 8px 32px rgba(0,0,0,0.06)',
+          },
+          borderRadius: { 'card': '12px' }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Raleway', sans-serif; background-color: #FAFAF5; color: #1A1A1A; }
+    h1, h2, h3, h4 { font-family: 'Lora', serif; }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  </style>
+  <script defer src="https://analytics.code-lieshout.nl/prikkel" data-website-id="da86629e-7202-473b-8f3f-7fbb4ee39190"></script>
+</head>
+<body class="bg-bg-main">
+
+  <!-- Navigation -->
+  <nav class="bg-primary shadow-soft sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+          <img src="images/header.png" alt="VC De Meeren logo" class="h-10 w-auto" loading="lazy">
+          <span class="font-heading font-bold text-white text-lg hidden sm:block">VC De Meeren</span>
+        </a>
+        <div class="hidden lg:flex items-center gap-1">
+          <a href="index.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Home</a>
+          <a href="over-ons.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Over Ons</a>
+          <a href="het-meer.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Het Meer</a>
+          <a href="geschiedenis.html" class="text-white bg-secondary/40 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Geschiedenis</a>
+          <a href="hengelsport.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Hengelsport</a>
+          <a href="karperbestand.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Karperbestand</a>
+          <a href="wedstrijdvissen.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Wedstrijden</a>
+          <a href="stekken.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Stekken</a>
+          <a href="contact.html" class="ml-2 bg-cta hover:bg-amber-600 text-white px-4 py-2 rounded-card text-sm font-semibold transition-all duration-200 cursor-pointer">Vergunning</a>
+        </div>
+        <button id="menu-btn" class="lg:hidden text-white p-2 rounded-lg hover:bg-secondary/40 transition-all duration-200 cursor-pointer" aria-label="Menu openen">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-primary border-t border-secondary/30">
+      <div class="px-4 py-3 space-y-1">
+        <a href="index.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Home</a>
+        <a href="over-ons.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Over Ons</a>
+        <a href="het-meer.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Het Meer</a>
+        <a href="geschiedenis.html" class="block text-white px-3 py-2 rounded-lg text-sm font-medium bg-secondary/40 cursor-pointer">Geschiedenis</a>
+        <a href="hengelsport.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Hengelsport</a>
+        <a href="karperbestand.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Karperbestand</a>
+        <a href="wedstrijdvissen.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Wedstrijden</a>
+        <a href="stekken.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Stekken</a>
+        <a href="contact.html" class="block bg-cta text-white px-3 py-2 rounded-card text-sm font-semibold text-center mt-2 hover:bg-amber-600 transition-all duration-200 cursor-pointer">Vergunning aanvragen</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative py-24 bg-primary overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <img src="images/wind2.jpg" alt="" class="w-full h-full object-cover" loading="lazy">
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+      <p class="text-cta font-body font-semibold text-sm uppercase tracking-widest mb-3">Verleden & heden</p>
+      <h1 class="font-heading font-bold text-4xl lg:text-5xl text-white mb-6">Geschiedenis van het meer</h1>
+      <p class="font-body text-white/80 text-lg max-w-2xl mx-auto">Van zandgroeve in de jaren '40 tot één van de mooiste karperwateren van Noord-Brabant.</p>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="relative">
+        <!-- Vertical line -->
+        <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-primary/20 hidden md:block"></div>
+
+        <!-- Tijdlijn items -->
+        <div class="space-y-12">
+
+          <!-- 1940s -->
+          <div class="flex gap-8">
+            <div class="hidden md:flex flex-col items-center">
+              <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center flex-shrink-0 z-10 shadow-soft">
+                <span class="font-heading font-bold text-white text-xs">1940</span>
+              </div>
+            </div>
+            <div class="flex-1 bg-white rounded-card shadow-soft p-8">
+              <div class="md:hidden inline-block bg-primary text-white text-xs font-body font-bold px-3 py-1 rounded-full mb-4">1940s</div>
+              <h3 class="font-heading font-bold text-xl text-primary mb-4">Oorsprong: het "Duitse Lijntje"</h3>
+              <p class="font-body text-text-muted leading-relaxed">
+                Het water van VC De Meeren maakt deel uit van het gebied <strong>"De Kuilen"</strong>, gelegen tussen de dorpjes Mill en Langenboom. De plas is de oudste van de drie hoofdplassen die De Kuilen rijk is en vindt zijn oorsprong aan het begin van de jaren '40.
+              </p>
+              <p class="font-body text-text-muted leading-relaxed mt-4">
+                In die tijd groeven onze oosterburen verspreid door Brabant een aantal plassen waaruit zand werd gewonnen voor de aanleg van het <strong>"Duitse Lijntje"</strong> — een militaire spoorverbinding.
+              </p>
+            </div>
+          </div>
+
+          <!-- Na WOII -->
+          <div class="flex gap-8">
+            <div class="hidden md:flex flex-col items-center">
+              <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 z-10 shadow-soft">
+                <span class="font-heading font-bold text-white text-xs">1945+</span>
+              </div>
+            </div>
+            <div class="flex-1 bg-white rounded-card shadow-soft p-8">
+              <div class="md:hidden inline-block bg-secondary text-white text-xs font-body font-bold px-3 py-1 rounded-full mb-4">Na de oorlog</div>
+              <h3 class="font-heading font-bold text-xl text-primary mb-4">Zandgroeve & groeide complex</h3>
+              <p class="font-body text-text-muted leading-relaxed">
+                Na de Tweede Wereldoorlog heeft het gebied zijn functie als zandgroeve behouden en tot op de dag van vandaag breidt het meren-complex zich nog steeds uit.
+              </p>
+              <p class="font-body text-text-muted leading-relaxed mt-4">
+                Het water van VC De Meeren is echter zijn vergunning voor zandwinning <strong>eind jaren '80</strong> kwijt geraakt. Sindsdien wordt de grond rond de plas door eigenaar <strong>familie Thijssen</strong> gebruikt als bedrijfsterrein voor <em>Thijssen Dredging Equipment B.V.</em>
+              </p>
+            </div>
+          </div>
+
+          <!-- Sea Devils & Jetskiërs -->
+          <div class="flex gap-8">
+            <div class="hidden md:flex flex-col items-center">
+              <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center flex-shrink-0 z-10 shadow-soft">
+                <span class="font-heading font-bold text-white text-xs">1990s</span>
+              </div>
+            </div>
+            <div class="flex-1 bg-white rounded-card shadow-soft p-8">
+              <div class="md:hidden inline-block bg-accent text-white text-xs font-body font-bold px-3 py-1 rounded-full mb-4">1990s</div>
+              <h3 class="font-heading font-bold text-xl text-primary mb-4">Duikers en jetskiërs</h3>
+              <p class="font-body text-text-muted leading-relaxed">
+                De plas werd de thuisbasis van <strong>duikclub De Sea Devils</strong> en ook een groep jetskiërs vond er zijn onderkomen. Het water was in die jaren een populaire recreatieplek voor watersporters.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2000: Karpers -->
+          <div class="flex gap-8">
+            <div class="hidden md:flex flex-col items-center">
+              <div class="w-16 h-16 bg-cta rounded-full flex items-center justify-center flex-shrink-0 z-10 shadow-soft">
+                <span class="font-heading font-bold text-white text-xs">2000</span>
+              </div>
+            </div>
+            <div class="flex-1 bg-white rounded-card shadow-soft p-8">
+              <div class="md:hidden inline-block bg-cta text-white text-xs font-body font-bold px-3 py-1 rounded-full mb-4">Jaar 2000</div>
+              <h3 class="font-heading font-bold text-xl text-primary mb-4">De karpers van Wageningen</h3>
+              <p class="font-body text-text-muted leading-relaxed">
+                Eigenaar Thijssen zette in het jaar 2000 een <strong>15-tal mooie spiegelkarpers</strong> op het water uit, afkomstig van een onderzoek aan de <em>Universiteit van Wageningen</em>.
+              </p>
+              <p class="font-body text-text-muted leading-relaxed mt-4">
+                Op zijn water hebben de karpers <strong>10 jaar lang ongestoord</strong> kunnen leven, met als gevolg een gezonde aanwas van prachtige spiegelkarpers.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2009-2010: Hengelsport -->
+          <div class="flex gap-8">
+            <div class="hidden md:flex flex-col items-center">
+              <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center flex-shrink-0 z-10 shadow-soft">
+                <span class="font-heading font-bold text-white text-xs">2009</span>
+              </div>
+            </div>
+            <div class="flex-1 bg-white rounded-card shadow-soft p-8">
+              <div class="md:hidden inline-block bg-primary text-white text-xs font-body font-bold px-3 py-1 rounded-full mb-4">2009-2010</div>
+              <h3 class="font-heading font-bold text-xl text-primary mb-4">Van jetski naar hengelsport</h3>
+              <p class="font-body text-text-muted leading-relaxed">
+                Sinds 2009 is het jetskiën op de plas geminimaliseerd. In de winter van dat jaar is begonnen met de oever geschikt te maken voor hengelsport, waarbij het <strong>authentieke ruwe karakter</strong> van het water intact werd gelaten.
+              </p>
+              <p class="font-body text-text-muted leading-relaxed mt-4">
+                Op <strong>10 oktober 2010</strong> werd Vis Club De Meeren officieel opgericht. Een nieuwe fase in de geschiedenis van dit bijzondere water was aangebroken.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2026: Nu -->
+          <div class="flex gap-8">
+            <div class="hidden md:flex flex-col items-center">
+              <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 z-10 shadow-soft">
+                <span class="font-heading font-bold text-white text-xs">2026</span>
+              </div>
+            </div>
+            <div class="flex-1 bg-primary rounded-card shadow-soft-lg p-8">
+              <div class="md:hidden inline-block bg-secondary text-white text-xs font-body font-bold px-3 py-1 rounded-full mb-4">Anno 2026</div>
+              <h3 class="font-heading font-bold text-xl text-white mb-4">Een prachtig karperwater</h3>
+              <p class="font-body text-white/80 leading-relaxed">
+                Anno 2026 bezit VC De Meeren een prachtig gevarieerd en gezond karperbestand met vissen van alle afmetingen, oplopend tot <strong>ver in de 40 pond</strong>. Het meer is uitgegroeid tot een van de meest uitdagende en mooiste syndicaat wateren van Noord-Brabant.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-footer-bg text-white py-12 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <img src="images/header.png" alt="VC De Meeren logo" class="h-12 w-auto mb-4" loading="lazy">
+          <p class="font-body text-white/70 text-sm leading-relaxed">Een prachtig syndicaat water in het hart van Brabant.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Navigatie</h4>
+          <ul class="space-y-2 font-body text-sm">
+            <li><a href="over-ons.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Over Ons</a></li>
+            <li><a href="het-meer.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Het Meer</a></li>
+            <li><a href="geschiedenis.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Geschiedenis</a></li>
+            <li><a href="hengelsport.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Hengelsport</a></li>
+            <li><a href="karperbestand.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Karperbestand</a></li>
+            <li><a href="wedstrijdvissen.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Wedstrijdvissen</a></li>
+            <li><a href="reglement.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Reglement</a></li>
+            <li><a href="contact.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Contact</h4>
+          <div class="space-y-2 font-body text-sm text-white/70">
+            <div class="flex items-start gap-2">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>Uilweg, 5441 Mill</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 flex-shrink-0 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="mailto:info@de-meeren.nl" class="hover:text-cta transition-all duration-200 cursor-pointer">info@de-meeren.nl</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 font-body text-sm text-white/50">
+        <span>&copy; 2026 VC De Meeren.</span>
+        <span>Gebouwd door <a href="https://www.code-lieshout.nl" class="text-cta hover:text-amber-400 transition-all duration-200 cursor-pointer">Code Lieshout</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

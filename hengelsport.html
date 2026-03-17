@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hengelsport — VC De Meeren</title>
+  <meta name="description" content="Karpervissen en witvissen bij VC De Meeren. Alles over vergunningen, technieken en vissoorten in het meer van Langenboom.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2D5016', secondary: '#4A7C2E', accent: '#1B6B93',
+            cta: '#D97706', 'bg-main': '#FAFAF5', 'card-bg': '#FFFFFF',
+            'text-main': '#1A1A1A', 'text-muted': '#6B7280', 'footer-bg': '#1C3409',
+          },
+          fontFamily: { heading: ['Lora', 'serif'], body: ['Raleway', 'sans-serif'] },
+          boxShadow: {
+            'soft': '0 2px 8px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.04)',
+            'soft-lg': '0 4px 16px rgba(0,0,0,0.10), 0 8px 32px rgba(0,0,0,0.06)',
+          },
+          borderRadius: { 'card': '12px' }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Raleway', sans-serif; background-color: #FAFAF5; color: #1A1A1A; }
+    h1, h2, h3, h4 { font-family: 'Lora', serif; }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  </style>
+  <script defer src="https://analytics.code-lieshout.nl/prikkel" data-website-id="da86629e-7202-473b-8f3f-7fbb4ee39190"></script>
+</head>
+<body class="bg-bg-main">
+
+  <!-- Navigation -->
+  <nav class="bg-primary shadow-soft sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+          <img src="images/header.png" alt="VC De Meeren logo" class="h-10 w-auto" loading="lazy">
+          <span class="font-heading font-bold text-white text-lg hidden sm:block">VC De Meeren</span>
+        </a>
+        <div class="hidden lg:flex items-center gap-1">
+          <a href="index.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Home</a>
+          <a href="over-ons.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Over Ons</a>
+          <a href="het-meer.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Het Meer</a>
+          <a href="geschiedenis.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Geschiedenis</a>
+          <a href="hengelsport.html" class="text-white bg-secondary/40 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Hengelsport</a>
+          <a href="karperbestand.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Karperbestand</a>
+          <a href="wedstrijdvissen.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Wedstrijden</a>
+          <a href="stekken.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Stekken</a>
+          <a href="contact.html" class="ml-2 bg-cta hover:bg-amber-600 text-white px-4 py-2 rounded-card text-sm font-semibold transition-all duration-200 cursor-pointer">Vergunning</a>
+        </div>
+        <button id="menu-btn" class="lg:hidden text-white p-2 rounded-lg hover:bg-secondary/40 transition-all duration-200 cursor-pointer" aria-label="Menu openen">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-primary border-t border-secondary/30">
+      <div class="px-4 py-3 space-y-1">
+        <a href="index.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Home</a>
+        <a href="over-ons.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Over Ons</a>
+        <a href="het-meer.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Het Meer</a>
+        <a href="geschiedenis.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Geschiedenis</a>
+        <a href="hengelsport.html" class="block text-white px-3 py-2 rounded-lg text-sm font-medium bg-secondary/40 cursor-pointer">Hengelsport</a>
+        <a href="karperbestand.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Karperbestand</a>
+        <a href="wedstrijdvissen.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Wedstrijden</a>
+        <a href="stekken.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Stekken</a>
+        <a href="contact.html" class="block bg-cta text-white px-3 py-2 rounded-card text-sm font-semibold text-center mt-2 hover:bg-amber-600 transition-all duration-200 cursor-pointer">Vergunning aanvragen</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative h-80 lg:h-96 flex items-end overflow-hidden">
+    <img src="images/karpervissen11.jpg" alt="Karpervissen bij VC De Meeren" loading="eager" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 pb-12 w-full">
+      <p class="text-cta font-body font-semibold text-sm uppercase tracking-widest mb-3">Hengelsport</p>
+      <h1 class="font-heading font-bold text-4xl lg:text-5xl text-white mb-4">Vissen aan het meer</h1>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="py-16 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="font-body text-text-muted text-lg leading-relaxed">
+        Het water van De Meeren leent zich uitstekend voor zowel karpervissen als witvissen. Het meer biedt een uitdagende en gevarieerde visomgeving voor zowel beginners (witvis) als gevorderde vissers (karper).
+      </p>
+    </div>
+  </section>
+
+  <!-- Karpervissen -->
+  <section class="py-12 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full font-body text-sm font-semibold mb-6">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+            Wachtlijst — aanmelding gesloten
+          </div>
+          <h2 class="font-heading font-bold text-3xl lg:text-4xl text-primary mb-6">Karpervissen</h2>
+          <p class="font-body text-text-muted text-lg leading-relaxed mb-6">
+            Mooie spiegels met prachtige schubbenpatronen, sterke schubkarpers en een verdwaalde ghostkarper. Het bestand is uitstekend: <strong>gemiddeld 10 kilo</strong>, toplaag boven de 20 kilo, en vissen tot 24+ kilo zijn al gevangen.
+          </p>
+          <p class="font-body text-text-muted leading-relaxed mb-8">
+            <strong>Geen brasem!</strong> Dit water is puur karper- en witviswater. Bootmaterialen — boot met accu, fishfinder en elektromotor — zijn verplicht voor karpervissers.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-bg-main rounded-card p-4 shadow-soft">
+              <div class="font-heading font-bold text-2xl text-primary">10 kg</div>
+              <div class="font-body text-text-muted text-sm">Gemiddeld gewicht</div>
+            </div>
+            <div class="bg-bg-main rounded-card p-4 shadow-soft">
+              <div class="font-heading font-bold text-2xl text-primary">24+ kg</div>
+              <div class="font-body text-text-muted text-sm">Grootste vangst</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="images/karpervissen25.jpg" alt="Karper gevangen bij VC De Meeren" loading="lazy" class="rounded-card shadow-soft-lg w-full object-cover h-96">
+        </div>
+      </div>
+
+      <!-- Karper verplichtingen -->
+      <div class="mt-12 bg-white rounded-card shadow-soft p-8">
+        <h3 class="font-heading font-bold text-xl text-primary mb-6">Vereiste uitrusting karpervissen</h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div><div class="font-body font-semibold text-text-main text-sm">Boot verplicht (stek 1-8)</div><div class="font-body text-text-muted text-xs">Bij veel wier altijd verplicht</div></div>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div><div class="font-body font-semibold text-text-main text-sm">Elektromotor + accu</div><div class="font-body text-text-muted text-xs">Geen verbrandingsmotor</div></div>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div><div class="font-body font-semibold text-text-main text-sm">Fishfinder</div><div class="font-body text-text-muted text-xs">Voor bodemverkenning</div></div>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div><div class="font-body font-semibold text-text-main text-sm">Onthaakmat + groot schepnet</div><div class="font-body text-text-muted text-xs">Welzijn vis staat voorop</div></div>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div><div class="font-body font-semibold text-text-main text-sm">Reddingsvest</div><div class="font-body text-text-muted text-xs">Verplicht op het water</div></div>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div><div class="font-body font-semibold text-text-main text-sm">Gevlochten hoofdlijn</div><div class="font-body text-text-muted text-xs">Met voorslag van min. 7,5m</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wachtlijst melding -->
+      <div class="mt-6 bg-amber-50 border border-cta/30 rounded-card p-6">
+        <div class="flex items-start gap-3">
+          <svg class="w-5 h-5 text-cta flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <div>
+            <div class="font-body font-semibold text-text-main mb-1">Wachtlijst karpervergunning</div>
+            <p class="font-body text-text-muted text-sm">Er is een wachtlijst — voorlopig geen nieuwe aanmeldingen tot 2027-2028. Houd de contactpagina in de gaten voor updates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Witvissen -->
+  <section class="py-16 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="images/karpervissen3.jpg" alt="Witvissen bij VC De Meeren" loading="lazy" class="rounded-card shadow-soft-lg w-full object-cover h-96">
+        </div>
+        <div>
+          <div class="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full font-body text-sm font-semibold mb-6">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Open voor aanmelding
+          </div>
+          <h2 class="font-heading font-bold text-3xl lg:text-4xl text-primary mb-6">Witvissen</h2>
+          <p class="font-body text-text-muted text-lg leading-relaxed mb-6">
+            Het meer heeft een <strong>mooi bestand aan voorn van groot formaat</strong> (200-300 gram). Zonnebaars is goed vertegenwoordigd en jonge karpers zijn aanwezig in mooie aantallen.
+          </p>
+          <p class="font-body text-text-muted leading-relaxed mb-8">
+            Ideaal met een vaste of feederhengel op voorn, baars en kleinere karpers. Betaalbaar en toegankelijk voor iedereen.
+          </p>
+          <!-- Prijs -->
+          <div class="bg-bg-main rounded-card shadow-soft p-6 mb-6">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-body font-semibold text-text-main">Jaarvergunning</span>
+              <span class="font-heading font-bold text-2xl text-primary">€20,-</span>
+            </div>
+            <p class="font-body text-text-muted text-sm">Plus borg voor de sleutels. Aanmelden via e-mail met naam, adres, woonplaats en geboortedatum.</p>
+          </div>
+          <a href="contact.html" class="inline-flex items-center gap-2 bg-secondary hover:bg-primary text-white font-body font-semibold px-6 py-3 rounded-card transition-all duration-200 cursor-pointer">
+            Witvisvergunning aanvragen
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Foto galerij vangsten -->
+  <section class="py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10">
+        <p class="text-secondary font-body font-semibold text-sm uppercase tracking-widest mb-3">Galerij</p>
+        <h2 class="font-heading font-bold text-3xl text-primary">Vangsten uit het meer</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="gallery">
+        <a href="images/karpervissen10.jpg" class="cursor-pointer group" data-lightbox>
+          <img src="images/karpervissen10.jpg" alt="Karper gevangen bij VC De Meeren" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover group-hover:opacity-90 transition-all duration-200">
+        </a>
+        <a href="images/karpervissen11.jpg" class="cursor-pointer group" data-lightbox>
+          <img src="images/karpervissen11.jpg" alt="Prachtige karper uit het meer" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover group-hover:opacity-90 transition-all duration-200">
+        </a>
+        <a href="images/karpervissen25.jpg" class="cursor-pointer group" data-lightbox>
+          <img src="images/karpervissen25.jpg" alt="Grote karper bij VC De Meeren" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover group-hover:opacity-90 transition-all duration-200">
+        </a>
+        <a href="images/karpervissen80.jpeg" class="cursor-pointer group" data-lightbox>
+          <img src="images/karpervissen80.jpeg" alt="Karper vangst aan het meer" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover group-hover:opacity-90 transition-all duration-200">
+        </a>
+        <a href="images/karpervissen85.jpg" class="cursor-pointer group" data-lightbox>
+          <img src="images/karpervissen85.jpg" alt="Spiegelkarper gevangen bij VC De Meeren" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover group-hover:opacity-90 transition-all duration-200">
+        </a>
+        <a href="images/bbqspiegel.jpg" class="cursor-pointer group" data-lightbox>
+          <img src="images/bbqspiegel.jpg" alt="De BBQ Spiegel karper van VC De Meeren" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover group-hover:opacity-90 transition-all duration-200">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4">
+    <button id="lb-close" class="absolute top-4 right-4 text-white cursor-pointer hover:text-cta transition-all duration-200" aria-label="Sluiten">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <img id="lb-img" src="" alt="Vergrote foto" class="max-w-full max-h-[90vh] rounded-card shadow-soft-lg object-contain">
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-footer-bg text-white py-12 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <img src="images/header.png" alt="VC De Meeren logo" class="h-12 w-auto mb-4" loading="lazy">
+          <p class="font-body text-white/70 text-sm leading-relaxed">Een prachtig syndicaat water in het hart van Brabant.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Navigatie</h4>
+          <ul class="space-y-2 font-body text-sm">
+            <li><a href="over-ons.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Over Ons</a></li>
+            <li><a href="het-meer.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Het Meer</a></li>
+            <li><a href="hengelsport.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Hengelsport</a></li>
+            <li><a href="karperbestand.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Karperbestand</a></li>
+            <li><a href="wedstrijdvissen.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Wedstrijdvissen</a></li>
+            <li><a href="reglement.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Reglement</a></li>
+            <li><a href="stekken.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Stekken</a></li>
+            <li><a href="contact.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Contact</h4>
+          <div class="space-y-2 font-body text-sm text-white/70">
+            <div class="flex items-start gap-2">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>Uilweg, 5441 Mill</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 flex-shrink-0 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="mailto:info@de-meeren.nl" class="hover:text-cta transition-all duration-200 cursor-pointer">info@de-meeren.nl</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 font-body text-sm text-white/50">
+        <span>&copy; 2026 VC De Meeren.</span>
+        <span>Gebouwd door <a href="https://www.code-lieshout.nl" class="text-cta hover:text-amber-400 transition-all duration-200 cursor-pointer">Code Lieshout</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    document.querySelectorAll('[data-lightbox]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        lbImg.src = a.href;
+        lbImg.alt = a.querySelector('img').alt;
+        lb.classList.remove('hidden');
+        lb.classList.add('flex');
+      });
+    });
+    document.getElementById('lb-close').addEventListener('click', () => {
+      lb.classList.add('hidden'); lb.classList.remove('flex');
+    });
+    lb.addEventListener('click', e => {
+      if (e.target === lb) { lb.classList.add('hidden'); lb.classList.remove('flex'); }
+    });
+  </script>
+</body>
+</html>

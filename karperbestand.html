@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karperbestand — VC De Meeren</title>
+  <meta name="description" content="Ontdek het unieke karperbestand van VC De Meeren. Prachtige spiegelkarpers en schubkarpers met hun eigen namen en verhalen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2D5016',
+            secondary: '#4A7C2E',
+            accent: '#1B6B93',
+            cta: '#D97706',
+            'bg-main': '#FAFAF5',
+            'card-bg': '#FFFFFF',
+            'text-main': '#1A1A1A',
+            'text-muted': '#6B7280',
+            'footer-bg': '#1C3409',
+          },
+          fontFamily: {
+            heading: ['Lora', 'serif'],
+            body: ['Raleway', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft': '0 2px 8px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.04)',
+            'soft-lg': '0 4px 16px rgba(0,0,0,0.10), 0 8px 32px rgba(0,0,0,0.06)',
+          },
+          borderRadius: {
+            'card': '12px',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Raleway', sans-serif; background-color: #FAFAF5; color: #1A1A1A; }
+    h1, h2, h3, h4 { font-family: 'Lora', serif; }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  </style>
+  <script defer src="https://analytics.code-lieshout.nl/prikkel" data-website-id="da86629e-7202-473b-8f3f-7fbb4ee39190"></script>
+</head>
+<body class="bg-bg-main">
+
+  <!-- Navigation -->
+  <nav class="bg-primary shadow-soft sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+          <img src="images/header.png" alt="VC De Meeren logo" class="h-10 w-auto" loading="lazy">
+          <span class="font-heading font-bold text-white text-lg hidden sm:block">VC De Meeren</span>
+        </a>
+        <div class="hidden lg:flex items-center gap-1">
+          <a href="index.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Home</a>
+          <a href="over-ons.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Over Ons</a>
+          <a href="het-meer.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Het Meer</a>
+          <a href="geschiedenis.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Geschiedenis</a>
+          <a href="hengelsport.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Hengelsport</a>
+          <a href="karperbestand.html" class="text-white hover:text-cta transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Karperbestand</a>
+          <a href="wedstrijdvissen.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Wedstrijden</a>
+          <a href="stekken.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Stekken</a>
+          <a href="contact.html" class="ml-2 bg-cta hover:bg-amber-600 text-white px-4 py-2 rounded-card text-sm font-semibold transition-all duration-200 cursor-pointer">Vergunning</a>
+        </div>
+        <button id="menu-btn" class="lg:hidden text-white p-2 rounded-lg hover:bg-secondary/40 transition-all duration-200 cursor-pointer" aria-label="Menu openen">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-primary border-t border-secondary/30">
+      <div class="px-4 py-3 space-y-1">
+        <a href="index.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Home</a>
+        <a href="over-ons.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Over Ons</a>
+        <a href="het-meer.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Het Meer</a>
+        <a href="geschiedenis.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Geschiedenis</a>
+        <a href="hengelsport.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Hengelsport</a>
+        <a href="karperbestand.html" class="block text-white px-3 py-2 rounded-lg text-sm font-medium bg-secondary/40 cursor-pointer">Karperbestand</a>
+        <a href="wedstrijdvissen.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Wedstrijden</a>
+        <a href="stekken.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Stekken</a>
+        <a href="contact.html" class="block bg-cta text-white px-3 py-2 rounded-card text-sm font-semibold text-center mt-2 hover:bg-amber-600 transition-all duration-200 cursor-pointer">Vergunning aanvragen</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="relative py-20 bg-primary overflow-hidden">
+    <div class="absolute inset-0 opacity-20">
+      <img src="images/karpervissen85.jpg" alt="Karper achtergrond" class="w-full h-full object-cover" loading="eager">
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-cta font-body font-semibold text-sm uppercase tracking-widest mb-3">VC De Meeren</p>
+      <h1 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white mb-4">Karperbestand</h1>
+      <p class="font-body text-white/80 text-lg max-w-2xl mx-auto">De prominente bewoners van ons water — elk met hun eigen naam en verhaal.</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-card-bg rounded-card shadow-soft p-8 lg:p-12">
+        <p class="font-body text-text-main text-lg leading-relaxed mb-6">
+          Zoals jullie weten beschikt het clubwater over een prachtig bestand aan karper. Toen er in 2004 voor het eerst gevist en gevangen werd, is er een bestand aangelegd. In de afgelopen jaren zijn er regelmatig karpers terug gevangen. Het herkennen van vis heeft uiteindelijk geresulteerd in een aantal namen voor deze prominente bewoners.
+        </p>
+        <div class="flex items-center gap-3 text-accent">
+          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <p class="font-body text-sm">Gemiddeld gewicht: <strong>10 kg</strong> (2023) — Zwaarste vis: <strong>24 kg</strong> (2021)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Karpers Grid -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary text-center mb-12">Onze bekende karpers</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Single Scale -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
+          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-1">Single Scale</h3>
+          <p class="font-body text-text-muted text-sm">Een bijzondere spiegel met een herkenbaar schubpatroon.</p>
+        </div>
+
+        <!-- De oude rijen -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
+          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Oude Rijen</h3>
+          <p class="font-body text-text-muted text-sm">Een van de oorspronkelijke bewoners van het water.</p>
+        </div>
+
+        <!-- Scar -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
+          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-1">Scar</h3>
+          <p class="font-body text-text-muted text-sm">Herkenbaar aan een kenmerkend litteken.</p>
+        </div>
+
+        <!-- De dooie -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
+          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Dooie</h3>
+          <p class="font-body text-text-muted text-sm">Een prominente bewoner met een veelzeggende naam.</p>
+        </div>
+
+        <!-- De benelux spiegel -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
+          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Benelux Spiegel</h3>
+          <p class="font-body text-text-muted text-sm">Een prachtige spiegelkarper van formaat.</p>
+        </div>
+
+        <!-- De pseudo benelux -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
+          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Pseudo Benelux</h3>
+          <p class="font-body text-text-muted text-sm">Lijkt op de Benelux Spiegel, maar is een eigen vis.</p>
+        </div>
+
+        <!-- De mooie -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
+          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Mooie</h3>
+          <p class="font-body text-text-muted text-sm">De naam zegt het al — een bijzonder mooie karper.</p>
+        </div>
+
+        <!-- Het mannetje -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
+          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-1">Het Mannetje</h3>
+          <p class="font-body text-text-muted text-sm">Een stoere karper met karakter.</p>
+        </div>
+
+        <!-- De vinvis -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
+          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Vinvis</h3>
+          <p class="font-body text-text-muted text-sm">Herkenbaar aan kenmerkende vinnen.</p>
+        </div>
+
+        <!-- De streep -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
+          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Streep</h3>
+          <p class="font-body text-text-muted text-sm">Opvallende streepmarkering langs het lichaam.</p>
+        </div>
+
+        <!-- De barbeque spiegel -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
+          <div class="w-12 h-12 bg-cta/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-1">De Barbeque Spiegel</h3>
+          <p class="font-body text-text-muted text-sm">Een iconische spiegel van het water.</p>
+        </div>
+
+        <!-- Willem -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
+          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-1">Willem</h3>
+          <p class="font-body text-text-muted text-sm">Een herkenbare karper met een eigen naam.</p>
+        </div>
+
+        <!-- Overbeet -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200 border border-secondary/10">
+          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-1">Overbeet</h3>
+          <p class="font-body text-text-muted text-sm">Genoemd naar een opvallend kenmerk aan de bek.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary text-center mb-12">Vangsten</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="rounded-card overflow-hidden shadow-soft cursor-pointer hover:shadow-soft-lg transition-all duration-200" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen3.jpg" alt="Karper vangst" class="w-full h-48 object-cover" loading="lazy">
+        </div>
+        <div class="rounded-card overflow-hidden shadow-soft cursor-pointer hover:shadow-soft-lg transition-all duration-200" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen10.jpg" alt="Karper vangst" class="w-full h-48 object-cover" loading="lazy">
+        </div>
+        <div class="rounded-card overflow-hidden shadow-soft cursor-pointer hover:shadow-soft-lg transition-all duration-200" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen11.jpg" alt="Karper vangst" class="w-full h-48 object-cover" loading="lazy">
+        </div>
+        <div class="rounded-card overflow-hidden shadow-soft cursor-pointer hover:shadow-soft-lg transition-all duration-200" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen25.jpg" alt="Karper vangst" class="w-full h-48 object-cover" loading="lazy">
+        </div>
+        <div class="rounded-card overflow-hidden shadow-soft cursor-pointer hover:shadow-soft-lg transition-all duration-200" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/karpervissen80.jpeg" alt="Karper vangst" class="w-full h-48 object-cover" loading="lazy">
+        </div>
+        <div class="rounded-card overflow-hidden shadow-soft cursor-pointer hover:shadow-soft-lg transition-all duration-200" onclick="openLightbox(this.querySelector('img'))">
+          <img src="images/bbqspiegel.jpg" alt="De Barbeque Spiegel" class="w-full h-48 object-cover" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-primary">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-white mb-4">Wil jij deze karpers ook ontmoeten?</h2>
+      <p class="font-body text-white/80 mb-8">Neem contact op voor informatie over vergunningen en beschikbaarheid.</p>
+      <a href="contact.html" class="inline-block bg-cta hover:bg-amber-600 text-white font-body font-semibold px-8 py-4 rounded-card transition-all duration-200 cursor-pointer shadow-soft-lg">
+        Neem contact op
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-footer-bg text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="images/header.png" alt="VC De Meeren logo" class="h-10 w-auto" loading="lazy">
+            <span class="font-heading font-bold text-lg">VC De Meeren</span>
+          </div>
+          <p class="font-body text-white/70 text-sm leading-relaxed">Vissen zoals vissen behoort te zijn. Een prachtig syndicaat water verscholen in het Brabantse landschap.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-base mb-4">Pagina's</h4>
+          <ul class="space-y-2">
+            <li><a href="over-ons.html" class="font-body text-white/70 hover:text-cta transition-all duration-200 text-sm cursor-pointer">Over Ons</a></li>
+            <li><a href="het-meer.html" class="font-body text-white/70 hover:text-cta transition-all duration-200 text-sm cursor-pointer">Het Meer</a></li>
+            <li><a href="hengelsport.html" class="font-body text-white/70 hover:text-cta transition-all duration-200 text-sm cursor-pointer">Hengelsport</a></li>
+            <li><a href="wedstrijdvissen.html" class="font-body text-white/70 hover:text-cta transition-all duration-200 text-sm cursor-pointer">Wedstrijden</a></li>
+            <li><a href="reglement.html" class="font-body text-white/70 hover:text-cta transition-all duration-200 text-sm cursor-pointer">Reglement</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-base mb-4">Contact</h4>
+          <ul class="space-y-2 font-body text-white/70 text-sm">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              Uilweg, 5453 JD Langenboom
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="contact.html" class="hover:text-cta transition-all duration-200 cursor-pointer">Neem contact op</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-8 pt-8 text-center">
+        <p class="font-body text-white/50 text-sm">© 2026 VC De Meeren. Gebouwd door <a href="https://www.code-lieshout.nl" class="hover:text-cta transition-all duration-200 cursor-pointer underline">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center p-4" onclick="closeLightbox()">
+    <button class="absolute top-4 right-4 text-white/80 hover:text-white cursor-pointer" aria-label="Sluiten">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[90vh] object-contain rounded-lg">
+  </div>
+
+  <script>
+    // Mobile menu
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Lightbox
+    function openLightbox(img) {
+      const lb = document.getElementById('lightbox');
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox-img').alt = img.alt;
+      lb.classList.remove('hidden');
+      lb.classList.add('flex');
+    }
+    function closeLightbox() {
+      const lb = document.getElementById('lightbox');
+      lb.classList.add('hidden');
+      lb.classList.remove('flex');
+    }
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+  </script>
+
+</body>
+</html>

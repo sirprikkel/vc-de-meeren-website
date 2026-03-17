@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Over Ons — VC De Meeren</title>
+  <meta name="description" content="VC De Meeren — opgericht op 10 oktober 2010. Leer meer over onze visclub, bestuur en missie.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2D5016', secondary: '#4A7C2E', accent: '#1B6B93',
+            cta: '#D97706', 'bg-main': '#FAFAF5', 'card-bg': '#FFFFFF',
+            'text-main': '#1A1A1A', 'text-muted': '#6B7280', 'footer-bg': '#1C3409',
+          },
+          fontFamily: { heading: ['Lora', 'serif'], body: ['Raleway', 'sans-serif'] },
+          boxShadow: {
+            'soft': '0 2px 8px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.04)',
+            'soft-lg': '0 4px 16px rgba(0,0,0,0.10), 0 8px 32px rgba(0,0,0,0.06)',
+          },
+          borderRadius: { 'card': '12px' }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Raleway', sans-serif; background-color: #FAFAF5; color: #1A1A1A; }
+    h1, h2, h3, h4 { font-family: 'Lora', serif; }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  </style>
+  <script defer src="https://analytics.code-lieshout.nl/prikkel" data-website-id="da86629e-7202-473b-8f3f-7fbb4ee39190"></script>
+</head>
+<body class="bg-bg-main">
+
+  <!-- Navigation -->
+  <nav class="bg-primary shadow-soft sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+          <img src="images/header.png" alt="VC De Meeren logo" class="h-10 w-auto" loading="lazy">
+          <span class="font-heading font-bold text-white text-lg hidden sm:block">VC De Meeren</span>
+        </a>
+        <div class="hidden lg:flex items-center gap-1">
+          <a href="index.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Home</a>
+          <a href="over-ons.html" class="text-white bg-secondary/40 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Over Ons</a>
+          <a href="het-meer.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Het Meer</a>
+          <a href="geschiedenis.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Geschiedenis</a>
+          <a href="hengelsport.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Hengelsport</a>
+          <a href="karperbestand.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Karperbestand</a>
+          <a href="wedstrijdvissen.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Wedstrijden</a>
+          <a href="stekken.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Stekken</a>
+          <a href="contact.html" class="ml-2 bg-cta hover:bg-amber-600 text-white px-4 py-2 rounded-card text-sm font-semibold transition-all duration-200 cursor-pointer">Vergunning</a>
+        </div>
+        <button id="menu-btn" class="lg:hidden text-white p-2 rounded-lg hover:bg-secondary/40 transition-all duration-200 cursor-pointer" aria-label="Menu openen">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-primary border-t border-secondary/30">
+      <div class="px-4 py-3 space-y-1">
+        <a href="index.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Home</a>
+        <a href="over-ons.html" class="block text-white px-3 py-2 rounded-lg text-sm font-medium bg-secondary/40 cursor-pointer">Over Ons</a>
+        <a href="het-meer.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Het Meer</a>
+        <a href="geschiedenis.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Geschiedenis</a>
+        <a href="hengelsport.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Hengelsport</a>
+        <a href="karperbestand.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Karperbestand</a>
+        <a href="wedstrijdvissen.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Wedstrijden</a>
+        <a href="stekken.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Stekken</a>
+        <a href="contact.html" class="block bg-cta text-white px-3 py-2 rounded-card text-sm font-semibold text-center mt-2 hover:bg-amber-600 transition-all duration-200 cursor-pointer">Vergunning aanvragen</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="relative py-24 bg-primary overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <img src="images/sfeer4.jpg" alt="" class="w-full h-full object-cover" loading="lazy">
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+      <p class="text-cta font-body font-semibold text-sm uppercase tracking-widest mb-3">Visclub De Meeren</p>
+      <h1 class="font-heading font-bold text-4xl lg:text-5xl text-white mb-6">Over Ons</h1>
+      <p class="font-body text-white/80 text-lg max-w-2xl mx-auto">Opgericht op 10 oktober 2010 met één missie: terug naar de natuur.</p>
+    </div>
+  </section>
+
+  <!-- Missie -->
+  <section class="py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-secondary font-body font-semibold text-sm uppercase tracking-widest mb-3">Onze missie</p>
+          <h2 class="font-heading font-bold text-3xl lg:text-4xl text-primary mb-6">'Vissen zoals vissen behoort te zijn'</h2>
+          <p class="font-body text-text-muted text-lg leading-relaxed mb-6">
+            Met deze gedachte in het achterhoofd heeft een groep enthousiaste vissers Vis Club De Meeren opgericht. Deze club is tot stand gekomen op <strong>10 oktober 2010</strong>. Het doel van VC De Meeren is om weer <em>back to nature</em> te gaan.
+          </p>
+          <p class="font-body text-text-muted leading-relaxed mb-6">
+            Een visclub waar <strong>gezelligheid hoog in het vaandel staat!</strong> Vis Club De Meeren bestaat uit een bestuur van 5 leden, een witviscommissie, 35 witvisvergunninghouders en 26 karpervisvergunninghouders.
+          </p>
+          <div class="flex gap-6">
+            <div class="text-center">
+              <div class="font-heading font-bold text-3xl text-primary">35</div>
+              <div class="font-body text-text-muted text-sm">Witvis leden</div>
+            </div>
+            <div class="text-center">
+              <div class="font-heading font-bold text-3xl text-primary">26</div>
+              <div class="font-body text-text-muted text-sm">Karper leden</div>
+            </div>
+            <div class="text-center">
+              <div class="font-heading font-bold text-3xl text-primary">2010</div>
+              <div class="font-body text-text-muted text-sm">Opgericht</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="images/hengelsErik.jpg" alt="Vissen aan het meer van VC De Meeren" loading="lazy" class="rounded-card shadow-soft-lg w-full object-cover h-96">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bestuur -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-secondary font-body font-semibold text-sm uppercase tracking-widest mb-3">Het team</p>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-primary">Bestuur & Medewerkers</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Bestuurleden -->
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <div class="font-heading font-semibold text-primary mb-1">Alex Vroomen</div>
+          <div class="font-body text-text-muted text-sm">Penningmeester</div>
+        </div>
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200">
+          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <div class="font-heading font-semibold text-primary mb-1">Jos Hendriks</div>
+          <div class="font-body text-text-muted text-sm">Onderhoudscoördinator</div>
+        </div>
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200">
+          <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <div class="font-heading font-semibold text-primary mb-1">Joey Meulendijks</div>
+          <div class="font-body text-text-muted text-sm">Algemeen Bestuurslid</div>
+        </div>
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200">
+          <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <div class="font-heading font-semibold text-primary mb-1">Niels Smulders</div>
+          <div class="font-body text-text-muted text-sm">Algemeen Bestuurslid</div>
+        </div>
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200">
+          <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <div class="font-heading font-semibold text-primary mb-1">Savannah van Duijn</div>
+          <div class="font-body text-text-muted text-sm">Algemeen Bestuurslid</div>
+        </div>
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+            </svg>
+          </div>
+          <div class="font-heading font-semibold text-primary mb-1">Ben van Boekel</div>
+          <div class="font-body text-text-muted text-sm">Webmaster</div>
+        </div>
+        <div class="bg-bg-main rounded-card shadow-soft p-6 hover:shadow-soft-lg transition-all duration-200">
+          <div class="w-12 h-12 bg-cta/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <div class="font-heading font-semibold text-primary mb-1">Sebastian Huvenaars</div>
+          <div class="font-body text-text-muted text-sm">Media Design</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-secondary font-body font-semibold text-sm uppercase tracking-widest mb-3">Onze waarden</p>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-primary">Waar we voor staan</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-2">Gezelligheid</h3>
+          <p class="font-body text-text-muted text-sm leading-relaxed">Samen vissen, samen genieten. Gezelligheid staat hoog in het vaandel.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-2">Natuur</h3>
+          <p class="font-body text-text-muted text-sm leading-relaxed">Back to nature. Het authentieke karakter van het water blijft intact.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-primary mb-2">Respect</h3>
+          <p class="font-body text-text-muted text-sm leading-relaxed">Respect voor de vissen, de natuur en mede-leden. Catch & release.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 px-4 bg-primary">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-heading font-bold text-3xl text-white mb-6">Wil je lid worden?</h2>
+      <p class="font-body text-white/80 mb-8">Witvisvergunningen zijn beschikbaar. Kijk op de contactpagina voor meer informatie.</p>
+      <a href="contact.html" class="inline-flex items-center gap-2 bg-cta hover:bg-amber-600 text-white font-body font-semibold px-8 py-4 rounded-card transition-all duration-200 cursor-pointer shadow-soft-lg">
+        Vergunning aanvragen
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-footer-bg text-white py-12 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <img src="images/header.png" alt="VC De Meeren logo" class="h-12 w-auto mb-4" loading="lazy">
+          <p class="font-body text-white/70 text-sm leading-relaxed">Een prachtig syndicaat water in het hart van Brabant. Vissen zoals vissen behoort te zijn.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Navigatie</h4>
+          <ul class="space-y-2 font-body text-sm">
+            <li><a href="over-ons.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Over Ons</a></li>
+            <li><a href="het-meer.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Het Meer</a></li>
+            <li><a href="hengelsport.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Hengelsport</a></li>
+            <li><a href="karperbestand.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Karperbestand</a></li>
+            <li><a href="wedstrijdvissen.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Wedstrijdvissen</a></li>
+            <li><a href="reglement.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Reglement</a></li>
+            <li><a href="stekken.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Stekken</a></li>
+            <li><a href="contact.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Contact</h4>
+          <div class="space-y-2 font-body text-sm text-white/70">
+            <div class="flex items-start gap-2">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>Uilweg, 5441 Mill<br>Gemeente Mill en Sint Hubert</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 flex-shrink-0 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="mailto:info@de-meeren.nl" class="hover:text-cta transition-all duration-200 cursor-pointer">info@de-meeren.nl</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 font-body text-sm text-white/50">
+        <span>&copy; 2026 VC De Meeren. Alle rechten voorbehouden.</span>
+        <span>Gebouwd door <a href="https://www.code-lieshout.nl" class="text-cta hover:text-amber-400 transition-all duration-200 cursor-pointer">Code Lieshout</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

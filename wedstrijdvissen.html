@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedstrijdvissen — VC De Meeren</title>
+  <meta name="description" content="Agenda 2026, witviswedstrijden, avondcompetitie en nacht koppelwedstrijd bij VC De Meeren in Langenboom.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2D5016',
+            secondary: '#4A7C2E',
+            accent: '#1B6B93',
+            cta: '#D97706',
+            'bg-main': '#FAFAF5',
+            'card-bg': '#FFFFFF',
+            'text-main': '#1A1A1A',
+            'text-muted': '#6B7280',
+            'footer-bg': '#1C3409',
+          },
+          fontFamily: {
+            heading: ['Lora', 'serif'],
+            body: ['Raleway', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft': '0 2px 8px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.04)',
+            'soft-lg': '0 4px 16px rgba(0,0,0,0.10), 0 8px 32px rgba(0,0,0,0.06)',
+          },
+          borderRadius: { 'card': '12px' }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Raleway', sans-serif; background-color: #FAFAF5; color: #1A1A1A; }
+    h1, h2, h3, h4 { font-family: 'Lora', serif; }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  </style>
+  <script defer src="https://analytics.code-lieshout.nl/prikkel" data-website-id="da86629e-7202-473b-8f3f-7fbb4ee39190"></script>
+</head>
+<body class="bg-bg-main">
+
+  <!-- Navigation -->
+  <nav class="bg-primary shadow-soft sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+          <img src="images/header.png" alt="VC De Meeren logo" class="h-10 w-auto" loading="lazy">
+          <span class="font-heading font-bold text-white text-lg hidden sm:block">VC De Meeren</span>
+        </a>
+        <div class="hidden lg:flex items-center gap-1">
+          <a href="index.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Home</a>
+          <a href="over-ons.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Over Ons</a>
+          <a href="het-meer.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Het Meer</a>
+          <a href="geschiedenis.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Geschiedenis</a>
+          <a href="hengelsport.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Hengelsport</a>
+          <a href="karperbestand.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Karperbestand</a>
+          <a href="wedstrijdvissen.html" class="text-white hover:text-cta transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Wedstrijden</a>
+          <a href="stekken.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Stekken</a>
+          <a href="contact.html" class="ml-2 bg-cta hover:bg-amber-600 text-white px-4 py-2 rounded-card text-sm font-semibold transition-all duration-200 cursor-pointer">Vergunning</a>
+        </div>
+        <button id="menu-btn" class="lg:hidden text-white p-2 rounded-lg hover:bg-secondary/40 transition-all duration-200 cursor-pointer" aria-label="Menu openen">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-primary border-t border-secondary/30">
+      <div class="px-4 py-3 space-y-1">
+        <a href="index.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Home</a>
+        <a href="over-ons.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Over Ons</a>
+        <a href="het-meer.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Het Meer</a>
+        <a href="geschiedenis.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Geschiedenis</a>
+        <a href="hengelsport.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Hengelsport</a>
+        <a href="karperbestand.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Karperbestand</a>
+        <a href="wedstrijdvissen.html" class="block text-white px-3 py-2 rounded-lg text-sm font-medium bg-secondary/40 cursor-pointer">Wedstrijden</a>
+        <a href="stekken.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Stekken</a>
+        <a href="contact.html" class="block bg-cta text-white px-3 py-2 rounded-card text-sm font-semibold text-center mt-2 hover:bg-amber-600 transition-all duration-200 cursor-pointer">Vergunning aanvragen</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="relative py-20 bg-primary overflow-hidden">
+    <div class="absolute inset-0 opacity-20">
+      <img src="images/google/google_place_3.jpg" alt="Het meer" class="w-full h-full object-cover" loading="eager">
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-cta font-body font-semibold text-sm uppercase tracking-widest mb-3">VC De Meeren</p>
+      <h1 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white mb-4">Wedstrijdvissen</h1>
+      <p class="font-body text-white/80 text-lg max-w-2xl mx-auto">Agenda 2026, wedstrijden en competities op het water.</p>
+    </div>
+  </section>
+
+  <!-- Agenda 2026 -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary mb-8">Agenda 2026</h2>
+      <div class="bg-card-bg rounded-card shadow-soft overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left">
+            <thead class="bg-primary text-white">
+              <tr>
+                <th class="px-6 py-3 font-body font-semibold text-sm">Datum</th>
+                <th class="px-6 py-3 font-body font-semibold text-sm">Activiteit</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Za 28-03</td><td class="px-6 py-3 font-body text-sm">Onderhoud</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Za 11-04</td><td class="px-6 py-3 font-body text-sm">Onderhoud</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200 bg-accent/5"><td class="px-6 py-3 font-body text-sm text-accent font-semibold">Vr 17-04 t/m zo 19-04</td><td class="px-6 py-3 font-body text-sm font-semibold text-accent">Teamweekend Carp Rig King<br><span class="text-text-muted font-normal text-xs">Water vrijhouden: vrijdag hele dag t/m zondag 18u</span></td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Ma 27-04</td><td class="px-6 py-3 font-body text-sm">Jetski (Koningsdag)</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Za 02-05</td><td class="px-6 py-3 font-body text-sm">Onderhoud</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Za 16-05</td><td class="px-6 py-3 font-body text-sm">Onderhoud</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Zo 17-05</td><td class="px-6 py-3 font-body text-sm">Jetski</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Ma 25-05</td><td class="px-6 py-3 font-body text-sm">Jetski (2e Pinksterdag)</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Za 06-06</td><td class="px-6 py-3 font-body text-sm">Onderhoud</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Zo 07-06</td><td class="px-6 py-3 font-body text-sm">Jetski</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Za 20-06</td><td class="px-6 py-3 font-body text-sm">Onderhoud</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200 bg-cta/5"><td class="px-6 py-3 font-body text-sm text-cta font-semibold">Za 27-06</td><td class="px-6 py-3 font-body text-sm font-semibold text-cta">Open wedstrijd</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Zo 28-06</td><td class="px-6 py-3 font-body text-sm">Jetski</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Za 04-07</td><td class="px-6 py-3 font-body text-sm">Onderhoud</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200 bg-accent/5"><td class="px-6 py-3 font-body text-sm text-accent font-semibold">Vr 10-07 t/m zo 12-07</td><td class="px-6 py-3 font-body text-sm font-semibold text-accent">KSN Jeugdviskamp<br><span class="text-text-muted font-normal text-xs">Water vrijhouden: vrijdag hele dag t/m zondag 12u</span></td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Zo 12-07</td><td class="px-6 py-3 font-body text-sm">Jetski</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Za 18-07</td><td class="px-6 py-3 font-body text-sm">Onderhoud</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200 bg-cta/5"><td class="px-6 py-3 font-body text-sm text-cta font-semibold">Za 18-07</td><td class="px-6 py-3 font-body text-sm font-semibold text-cta">Nachtkoppelwedstrijd</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Zo 19-07</td><td class="px-6 py-3 font-body text-sm">Jetski</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200 bg-cta/5"><td class="px-6 py-3 font-body text-sm text-cta font-semibold">Za 25-07</td><td class="px-6 py-3 font-body text-sm font-semibold text-cta">Open koppelwedstrijd<br><span class="text-text-muted font-normal text-xs">Start bouwvak</span></td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Zo 16-08</td><td class="px-6 py-3 font-body text-sm">Jetski (einde bouwvak)</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200 bg-secondary/5"><td class="px-6 py-3 font-body text-sm text-secondary font-semibold">Wo 19-08</td><td class="px-6 py-3 font-body text-sm font-semibold text-secondary">Avond competitie</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Za 22-08</td><td class="px-6 py-3 font-body text-sm">Onderhoud</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200 bg-secondary/5"><td class="px-6 py-3 font-body text-sm text-secondary font-semibold">Wo 26-08</td><td class="px-6 py-3 font-body text-sm font-semibold text-secondary">Avond competitie</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200 bg-secondary/5"><td class="px-6 py-3 font-body text-sm text-secondary font-semibold">Wo 02-09</td><td class="px-6 py-3 font-body text-sm font-semibold text-secondary">Avond competitie</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200 bg-cta/5"><td class="px-6 py-3 font-body text-sm text-cta font-semibold">Za 05-09</td><td class="px-6 py-3 font-body text-sm font-semibold text-cta">Koningswedstrijd</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Zo 06-09</td><td class="px-6 py-3 font-body text-sm">Jetski</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200 bg-secondary/5"><td class="px-6 py-3 font-body text-sm text-secondary font-semibold">Wo 09-09</td><td class="px-6 py-3 font-body text-sm font-semibold text-secondary">Avond competitie</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200 bg-secondary/5"><td class="px-6 py-3 font-body text-sm text-secondary font-semibold">Wo 16-09</td><td class="px-6 py-3 font-body text-sm font-semibold text-secondary">Avond competitie</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Zo 20-09</td><td class="px-6 py-3 font-body text-sm">Jetski</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Za 26-09</td><td class="px-6 py-3 font-body text-sm">Onderhoud</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Za 17-10</td><td class="px-6 py-3 font-body text-sm">Onderhoud</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Za 07-11</td><td class="px-6 py-3 font-body text-sm">Onderhoud</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Za 21-11</td><td class="px-6 py-3 font-body text-sm">Onderhoud</td></tr>
+              <tr class="hover:bg-bg-main transition-all duration-200"><td class="px-6 py-3 font-body text-sm text-text-muted">Za 28-11</td><td class="px-6 py-3 font-body text-sm">Onderhoud</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="px-6 py-4 bg-bg-main border-t border-gray-100">
+          <p class="font-body text-text-muted text-sm">Onderhoud: 9:00 – ca. 14:00 | Jetski: 12:00 – 17:00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Witviswedstrijden -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary mb-8">Witviswedstrijden</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="bg-bg-main rounded-card shadow-soft p-6 border-t-4 border-cta">
+          <h3 class="font-heading font-semibold text-lg text-primary mb-2">Open Wedstrijd</h3>
+          <p class="font-body text-cta font-semibold text-sm mb-3">Zaterdag 27 juni</p>
+          <p class="font-body text-text-muted text-sm">Kosten: €7,50 per persoon</p>
+        </div>
+        <div class="bg-bg-main rounded-card shadow-soft p-6 border-t-4 border-cta">
+          <h3 class="font-heading font-semibold text-lg text-primary mb-2">Open Koppelwedstrijd</h3>
+          <p class="font-body text-cta font-semibold text-sm mb-3">Zaterdag 25 juli</p>
+          <p class="font-body text-text-muted text-sm">Kosten: €15,- per koppel</p>
+        </div>
+        <div class="bg-bg-main rounded-card shadow-soft p-6 border-t-4 border-primary">
+          <h3 class="font-heading font-semibold text-lg text-primary mb-2">Koningswedstrijd</h3>
+          <p class="font-body text-cta font-semibold text-sm mb-3">Zaterdag 6 september</p>
+          <p class="font-body text-text-muted text-sm">Kosten: €7,50 per persoon<br><span class="text-xs italic">Alleen voor leden van VC de Meeren</span></p>
+        </div>
+      </div>
+      <div class="bg-bg-main rounded-card shadow-soft p-6">
+        <p class="font-body text-text-main text-sm leading-relaxed">
+          <strong>Vanaf 2026</strong> zijn alle wedstrijden vrije hengelkeuze, behalve de koningswedstrijd — deze blijft een vaste stok wedstrijd.
+        </p>
+        <p class="font-body text-text-muted text-sm mt-3">
+          Voor alle dagwedstrijden: loten om 8:00 bij het clubgebouw, poort open vanaf 7:30. Vissen van 9:00 tot 13:00. 20 individuele en 12 koppelplaatsen beschikbaar. Vol = vol.
+        </p>
+        <p class="font-body text-text-muted text-sm mt-2"><strong>Let op:</strong> voor karpervissers is het NIET mogelijk om op wedstrijddagen te vissen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avondcompetitie -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary mb-8">Avondcompetitie</h2>
+      <div class="bg-card-bg rounded-card shadow-soft p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="font-heading font-semibold text-lg text-primary mb-4">Data</h3>
+            <ul class="space-y-2">
+              <li class="font-body text-text-main text-sm flex items-center gap-2">
+                <svg class="w-4 h-4 text-secondary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                Woensdag 19 augustus
+              </li>
+              <li class="font-body text-text-main text-sm flex items-center gap-2">
+                <svg class="w-4 h-4 text-secondary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                Woensdag 26 augustus
+              </li>
+              <li class="font-body text-text-main text-sm flex items-center gap-2">
+                <svg class="w-4 h-4 text-secondary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                Woensdag 2 september
+              </li>
+              <li class="font-body text-text-main text-sm flex items-center gap-2">
+                <svg class="w-4 h-4 text-secondary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                Woensdag 9 september
+              </li>
+              <li class="font-body text-text-main text-sm flex items-center gap-2">
+                <svg class="w-4 h-4 text-secondary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                Woensdag 16 september
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-heading font-semibold text-lg text-primary mb-4">Details</h3>
+            <ul class="space-y-2 font-body text-text-muted text-sm">
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 mt-0.5 text-cta flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Loten: 18:15
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 mt-0.5 text-cta flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Vissen: 19:00 – 22:00
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 mt-0.5 text-cta flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                Kosten: €10,- per persoon
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nacht koppelwedstrijd -->
+  <section class="py-16 bg-primary/5">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary mb-8">Nacht Koppelwedstrijd</h2>
+      <div class="bg-card-bg rounded-card shadow-soft p-8 border-l-4 border-accent">
+        <div class="flex flex-col md:flex-row md:items-start gap-6">
+          <div class="flex-1">
+            <p class="font-body text-cta font-semibold text-lg mb-4">Zaterdag 18 juli</p>
+            <ul class="space-y-2 font-body text-text-main text-sm">
+              <li>Loten: 19:00</li>
+              <li>Vissen: 20:00 – 06:00</li>
+              <li>Pauze: 24:00 – 01:00 (in de kantine wordt wat lekkers geserveerd)</li>
+              <li>07:00 gezamenlijk ontbijt</li>
+              <li>Kosten: €15,- per koppel</li>
+            </ul>
+          </div>
+          <div class="flex-shrink-0">
+            <div class="bg-primary/10 rounded-card p-4 text-center">
+              <svg class="w-12 h-12 text-primary mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+              <p class="font-body text-primary font-semibold text-sm">Nachtvissen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inschrijven -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary mb-8">Inschrijven</h2>
+      <div class="bg-card-bg rounded-card shadow-soft p-8">
+        <p class="font-body text-text-main text-sm leading-relaxed mb-6">
+          Deelname in volgorde van inschrijving en vol = vol. Betalen voor aanvang wedstrijden.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-bg-main rounded-card p-5">
+            <h3 class="font-heading font-semibold text-base text-primary mb-2">Peter de Kleijn</h3>
+            <p class="font-body text-text-muted text-sm">Esdoornlaan 17, Langenboom</p>
+            <a href="tel:0645179158" class="font-body text-accent text-sm hover:underline cursor-pointer flex items-center gap-1 mt-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              06-45179158
+            </a>
+          </div>
+          <div class="bg-bg-main rounded-card p-5">
+            <h3 class="font-heading font-semibold text-base text-primary mb-2">Geert Crooijmans</h3>
+            <p class="font-body text-text-muted text-sm">Jachthoornstraat 44, Sint Hubert</p>
+            <a href="tel:0622304472" class="font-body text-accent text-sm hover:underline cursor-pointer flex items-center gap-1 mt-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              06-22304472
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-footer-bg text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="images/header.png" alt="VC De Meeren logo" class="h-10 w-auto" loading="lazy">
+            <span class="font-heading font-bold text-lg">VC De Meeren</span>
+          </div>
+          <p class="font-body text-white/70 text-sm leading-relaxed">Vissen zoals vissen behoort te zijn.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-base mb-4">Pagina's</h4>
+          <ul class="space-y-2">
+            <li><a href="over-ons.html" class="font-body text-white/70 hover:text-cta transition-all duration-200 text-sm cursor-pointer">Over Ons</a></li>
+            <li><a href="het-meer.html" class="font-body text-white/70 hover:text-cta transition-all duration-200 text-sm cursor-pointer">Het Meer</a></li>
+            <li><a href="hengelsport.html" class="font-body text-white/70 hover:text-cta transition-all duration-200 text-sm cursor-pointer">Hengelsport</a></li>
+            <li><a href="reglement.html" class="font-body text-white/70 hover:text-cta transition-all duration-200 text-sm cursor-pointer">Reglement</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-base mb-4">Contact</h4>
+          <ul class="space-y-2 font-body text-white/70 text-sm">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              Uilweg, 5453 JD Langenboom
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-8 pt-8 text-center">
+        <p class="font-body text-white/50 text-sm">© 2026 VC De Meeren. Gebouwd door <a href="https://www.code-lieshout.nl" class="hover:text-cta transition-all duration-200 cursor-pointer underline">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

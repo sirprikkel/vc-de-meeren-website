@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Het Meer — VC De Meeren</title>
+  <meta name="description" content="Het meer van VC De Meeren: 13 hectare, maximaal 19 meter diep, kraakhelder water met een zichtdiepte van 4 meter. Alles over het water in Langenboom.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2D5016', secondary: '#4A7C2E', accent: '#1B6B93',
+            cta: '#D97706', 'bg-main': '#FAFAF5', 'card-bg': '#FFFFFF',
+            'text-main': '#1A1A1A', 'text-muted': '#6B7280', 'footer-bg': '#1C3409',
+          },
+          fontFamily: { heading: ['Lora', 'serif'], body: ['Raleway', 'sans-serif'] },
+          boxShadow: {
+            'soft': '0 2px 8px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.04)',
+            'soft-lg': '0 4px 16px rgba(0,0,0,0.10), 0 8px 32px rgba(0,0,0,0.06)',
+          },
+          borderRadius: { 'card': '12px' }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Raleway', sans-serif; background-color: #FAFAF5; color: #1A1A1A; }
+    h1, h2, h3, h4 { font-family: 'Lora', serif; }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  </style>
+  <script defer src="https://analytics.code-lieshout.nl/prikkel" data-website-id="da86629e-7202-473b-8f3f-7fbb4ee39190"></script>
+</head>
+<body class="bg-bg-main">
+
+  <!-- Navigation -->
+  <nav class="bg-primary shadow-soft sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+          <img src="images/header.png" alt="VC De Meeren logo" class="h-10 w-auto" loading="lazy">
+          <span class="font-heading font-bold text-white text-lg hidden sm:block">VC De Meeren</span>
+        </a>
+        <div class="hidden lg:flex items-center gap-1">
+          <a href="index.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Home</a>
+          <a href="over-ons.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Over Ons</a>
+          <a href="het-meer.html" class="text-white bg-secondary/40 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Het Meer</a>
+          <a href="geschiedenis.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Geschiedenis</a>
+          <a href="hengelsport.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Hengelsport</a>
+          <a href="karperbestand.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Karperbestand</a>
+          <a href="wedstrijdvissen.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Wedstrijden</a>
+          <a href="stekken.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Stekken</a>
+          <a href="contact.html" class="ml-2 bg-cta hover:bg-amber-600 text-white px-4 py-2 rounded-card text-sm font-semibold transition-all duration-200 cursor-pointer">Vergunning</a>
+        </div>
+        <button id="menu-btn" class="lg:hidden text-white p-2 rounded-lg hover:bg-secondary/40 transition-all duration-200 cursor-pointer" aria-label="Menu openen">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-primary border-t border-secondary/30">
+      <div class="px-4 py-3 space-y-1">
+        <a href="index.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Home</a>
+        <a href="over-ons.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Over Ons</a>
+        <a href="het-meer.html" class="block text-white px-3 py-2 rounded-lg text-sm font-medium bg-secondary/40 cursor-pointer">Het Meer</a>
+        <a href="geschiedenis.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Geschiedenis</a>
+        <a href="hengelsport.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Hengelsport</a>
+        <a href="karperbestand.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Karperbestand</a>
+        <a href="wedstrijdvissen.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Wedstrijden</a>
+        <a href="stekken.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Stekken</a>
+        <a href="contact.html" class="block bg-cta text-white px-3 py-2 rounded-card text-sm font-semibold text-center mt-2 hover:bg-amber-600 transition-all duration-200 cursor-pointer">Vergunning aanvragen</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative h-96 lg:h-[500px] flex items-end overflow-hidden">
+    <img src="images/wind2.jpg" alt="Het meer van VC De Meeren" loading="eager" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 pb-12 w-full">
+      <p class="text-cta font-body font-semibold text-sm uppercase tracking-widest mb-3">Het water</p>
+      <h1 class="font-heading font-bold text-4xl lg:text-5xl text-white mb-4">Het Meer</h1>
+      <p class="font-body text-white/90 text-lg max-w-2xl">13 hectare natuur, kraakhelder water en vissoorten die u nergens anders vindt.</p>
+    </div>
+  </section>
+
+  <!-- Introductie -->
+  <section class="py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <p class="text-accent font-body font-semibold text-sm uppercase tracking-widest mb-3">Over het meer</p>
+          <h2 class="font-heading font-bold text-3xl lg:text-4xl text-primary mb-6">Een bijzonder water</h2>
+          <p class="font-body text-text-muted text-lg leading-relaxed mb-6">
+            Het gebied van VC De Meeren is <strong>13 hectare groot</strong> en heeft een wateroppervlak van <strong>11 hectare</strong>. Het water heeft een variërend bodemverloop met vele plateaus en steile taludranden. Deze sterk variërende dieptes lopen op tot <strong>19 meter</strong>.
+          </p>
+          <p class="font-body text-text-muted leading-relaxed mb-6">
+            Daarbij is in het kraakheldere water een zichtafstand van <strong>4 meter</strong> geen uitzondering. De bodem bestaat voornamelijk uit zand, grind en bodemwier met op sommige plaatsen stofzand.
+          </p>
+          <p class="font-body text-text-muted leading-relaxed">
+            Het meer grenst direct aan een natuurgebied, wat zorgt voor een rustige en sereen sfeer. Ervaren vissers weten: dit water vraagt kennis en geduld, maar beloont dat royaal.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <img src="images/google/google_place_1.jpg" alt="Zicht op het meer van VC De Meeren" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover">
+          <img src="images/google/google_place_3.jpg" alt="Het meer van VC De Meeren" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover">
+          <img src="images/google/google_place_4.jpg" alt="Oever van het meer bij VC De Meeren" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover">
+          <img src="images/google/google_place_5.jpg" alt="Natuur rondom het meer van VC De Meeren" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specificaties -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-accent font-body font-semibold text-sm uppercase tracking-widest mb-3">Technische gegevens</p>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-primary">Specificaties van het meer</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-bg-main rounded-card shadow-soft p-6 flex items-start gap-4">
+          <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-heading font-bold text-xl text-accent mb-1">11 hectare</div>
+            <div class="font-body font-semibold text-text-main text-sm mb-1">Wateroppervlak</div>
+            <div class="font-body text-text-muted text-xs">Totaal gebied: 13 hectare</div>
+          </div>
+        </div>
+        <div class="bg-bg-main rounded-card shadow-soft p-6 flex items-start gap-4">
+          <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-heading font-bold text-xl text-accent mb-1">Max 19 m</div>
+            <div class="font-body font-semibold text-text-main text-sm mb-1">Maximale diepte</div>
+            <div class="font-body text-text-muted text-xs">Gemiddeld 8 meter diep</div>
+          </div>
+        </div>
+        <div class="bg-bg-main rounded-card shadow-soft p-6 flex items-start gap-4">
+          <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-heading font-bold text-xl text-secondary mb-1">4 meter</div>
+            <div class="font-body font-semibold text-text-main text-sm mb-1">Zichtdiepte</div>
+            <div class="font-body text-text-muted text-xs">Kraakhelder water</div>
+          </div>
+        </div>
+        <div class="bg-bg-main rounded-card shadow-soft p-6 flex items-start gap-4">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-heading font-bold text-xl text-primary mb-1">24 kg</div>
+            <div class="font-body font-semibold text-text-main text-sm mb-1">Zwaarste vangst</div>
+            <div class="font-body text-text-muted text-xs">Gevangen in 2021</div>
+          </div>
+        </div>
+        <div class="bg-bg-main rounded-card shadow-soft p-6 flex items-start gap-4">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-heading font-bold text-xl text-primary mb-1">10 kg</div>
+            <div class="font-body font-semibold text-text-main text-sm mb-1">Gemiddeld karper</div>
+            <div class="font-body text-text-muted text-xs">Gemiddeld gewicht (2023)</div>
+          </div>
+        </div>
+        <div class="bg-bg-main rounded-card shadow-soft p-6 flex items-start gap-4">
+          <div class="w-12 h-12 bg-cta/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-heading font-bold text-xl text-cta mb-1">Ervaring vereist</div>
+            <div class="font-body font-semibold text-text-main text-sm mb-1">Moeilijkheidsgraad</div>
+            <div class="font-body text-text-muted text-xs">Voor gevorderde vissers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vissoorten & Bodem -->
+  <section class="py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Vissoorten -->
+        <div class="bg-white rounded-card shadow-soft p-8">
+          <h3 class="font-heading font-bold text-2xl text-primary mb-6">Vissoorten</h3>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3 py-2 border-b border-gray-100">
+              <div class="w-2 h-2 rounded-full bg-primary flex-shrink-0"></div>
+              <span class="font-body text-text-main">Karper (spiegelkarper & schubkarper)</span>
+            </div>
+            <div class="flex items-center gap-3 py-2 border-b border-gray-100">
+              <div class="w-2 h-2 rounded-full bg-secondary flex-shrink-0"></div>
+              <span class="font-body text-text-main">Voorn</span>
+            </div>
+            <div class="flex items-center gap-3 py-2 border-b border-gray-100">
+              <div class="w-2 h-2 rounded-full bg-accent flex-shrink-0"></div>
+              <span class="font-body text-text-main">Zonnebaars</span>
+            </div>
+            <div class="flex items-center gap-3 py-2 border-b border-gray-100">
+              <div class="w-2 h-2 rounded-full bg-primary flex-shrink-0"></div>
+              <span class="font-body text-text-main">Grondel</span>
+            </div>
+            <div class="flex items-center gap-3 py-2 border-b border-gray-100">
+              <div class="w-2 h-2 rounded-full bg-secondary flex-shrink-0"></div>
+              <span class="font-body text-text-main">Zeelt</span>
+            </div>
+            <div class="flex items-center gap-3 py-2">
+              <div class="w-2 h-2 rounded-full bg-accent flex-shrink-0"></div>
+              <span class="font-body text-text-main">Snoek</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-6 border-t border-gray-100">
+            <div class="flex items-center gap-2 text-sm font-body text-text-muted">
+              <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Kreeft aanwezig
+            </div>
+            <div class="flex items-center gap-2 text-sm font-body text-text-muted mt-2">
+              <svg class="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Geen meerval aanwezig
+            </div>
+          </div>
+        </div>
+        <!-- Bodem & Omgeving -->
+        <div class="bg-white rounded-card shadow-soft p-8">
+          <h3 class="font-heading font-bold text-2xl text-primary mb-6">Bodem & Omgeving</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="font-body font-semibold text-text-main text-sm mb-1">Bodemsamenstelling</div>
+              <p class="font-body text-text-muted text-sm">Grind, zand, bodemwier en stofzand — varieert per locatie in het meer.</p>
+            </div>
+            <div class="pt-3 border-t border-gray-100">
+              <div class="font-body font-semibold text-text-main text-sm mb-1">Bodemverloop</div>
+              <p class="font-body text-text-muted text-sm">Veel plateaus en steile taludranden. Varierende dieptes van ondiep tot 19 meter.</p>
+            </div>
+            <div class="pt-3 border-t border-gray-100">
+              <div class="font-body font-semibold text-text-main text-sm mb-1">Wier</div>
+              <p class="font-body text-text-muted text-sm">Wier aanwezig — bij veel wier is een boot verplicht voor de eerste 8 stekken.</p>
+            </div>
+            <div class="pt-3 border-t border-gray-100">
+              <div class="font-body font-semibold text-text-main text-sm mb-1">Omgeving</div>
+              <p class="font-body text-text-muted text-sm">Rustig en afgelegen, grenzend aan een natuurgebied. Gesloten voor het publiek.</p>
+            </div>
+            <div class="pt-3 border-t border-gray-100">
+              <div class="font-body font-semibold text-text-main text-sm mb-1">Let op!</div>
+              <p class="font-body text-text-muted text-sm">Noord-oosthoek: kans op drijfzand. Zware obstakels onder water — zie verboden zones op de stekkenkaart.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Foto galerij -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-secondary font-body font-semibold text-sm uppercase tracking-widest mb-3">Fotogalerij</p>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-primary">Het meer in beeld</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="gallery">
+        <a href="images/google/google_place_1.jpg" class="cursor-pointer group" data-lightbox>
+          <img src="images/google/google_place_1.jpg" alt="Het meer van VC De Meeren" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover group-hover:opacity-90 transition-all duration-200">
+        </a>
+        <a href="images/google/google_place_2.jpg" class="cursor-pointer group" data-lightbox>
+          <img src="images/google/google_place_2.jpg" alt="Oever bij VC De Meeren" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover group-hover:opacity-90 transition-all duration-200">
+        </a>
+        <a href="images/google/google_place_3.jpg" class="cursor-pointer group" data-lightbox>
+          <img src="images/google/google_place_3.jpg" alt="Natuur rondom het meer" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover group-hover:opacity-90 transition-all duration-200">
+        </a>
+        <a href="images/google/google_place_4.jpg" class="cursor-pointer group" data-lightbox>
+          <img src="images/google/google_place_4.jpg" alt="Zicht op het meer" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover group-hover:opacity-90 transition-all duration-200">
+        </a>
+        <a href="images/google/google_place_5.jpg" class="cursor-pointer group" data-lightbox>
+          <img src="images/google/google_place_5.jpg" alt="Het meer bij VC De Meeren" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover group-hover:opacity-90 transition-all duration-200">
+        </a>
+        <a href="images/sfeer4.jpg" class="cursor-pointer group" data-lightbox>
+          <img src="images/sfeer4.jpg" alt="Sfeerfoto meer VC De Meeren" loading="lazy" class="rounded-card shadow-soft w-full h-48 object-cover group-hover:opacity-90 transition-all duration-200">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4">
+    <button id="lb-close" class="absolute top-4 right-4 text-white cursor-pointer hover:text-cta transition-all duration-200" aria-label="Sluiten">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <img id="lb-img" src="" alt="Vergrote foto" class="max-w-full max-h-[90vh] rounded-card shadow-soft-lg object-contain">
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-footer-bg text-white py-12 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <img src="images/header.png" alt="VC De Meeren logo" class="h-12 w-auto mb-4" loading="lazy">
+          <p class="font-body text-white/70 text-sm leading-relaxed">Een prachtig syndicaat water in het hart van Brabant.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Navigatie</h4>
+          <ul class="space-y-2 font-body text-sm">
+            <li><a href="over-ons.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Over Ons</a></li>
+            <li><a href="het-meer.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Het Meer</a></li>
+            <li><a href="hengelsport.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Hengelsport</a></li>
+            <li><a href="karperbestand.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Karperbestand</a></li>
+            <li><a href="wedstrijdvissen.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Wedstrijdvissen</a></li>
+            <li><a href="reglement.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Reglement</a></li>
+            <li><a href="stekken.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Stekken</a></li>
+            <li><a href="contact.html" class="text-white/70 hover:text-cta transition-all duration-200 cursor-pointer">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Contact</h4>
+          <div class="space-y-2 font-body text-sm text-white/70">
+            <div class="flex items-start gap-2">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>Uilweg, 5441 Mill</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 flex-shrink-0 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="mailto:info@de-meeren.nl" class="hover:text-cta transition-all duration-200 cursor-pointer">info@de-meeren.nl</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 font-body text-sm text-white/50">
+        <span>&copy; 2026 VC De Meeren.</span>
+        <span>Gebouwd door <a href="https://www.code-lieshout.nl" class="text-cta hover:text-amber-400 transition-all duration-200 cursor-pointer">Code Lieshout</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    // Lightbox
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    document.querySelectorAll('[data-lightbox]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        lbImg.src = a.href;
+        lbImg.alt = a.querySelector('img').alt;
+        lb.classList.remove('hidden');
+        lb.classList.add('flex');
+      });
+    });
+    document.getElementById('lb-close').addEventListener('click', () => {
+      lb.classList.add('hidden');
+      lb.classList.remove('flex');
+    });
+    lb.addEventListener('click', e => {
+      if (e.target === lb) { lb.classList.add('hidden'); lb.classList.remove('flex'); }
+    });
+  </script>
+</body>
+</html>

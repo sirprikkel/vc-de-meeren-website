@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reglement — VC De Meeren</title>
+  <meta name="description" content="Het volledige reglement van VC De Meeren voor karpervissers en witvissers. Lees de regels voor u het water opgaat.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2D5016', secondary: '#4A7C2E', accent: '#1B6B93', cta: '#D97706',
+            'bg-main': '#FAFAF5', 'card-bg': '#FFFFFF', 'text-main': '#1A1A1A', 'text-muted': '#6B7280', 'footer-bg': '#1C3409',
+          },
+          fontFamily: { heading: ['Lora', 'serif'], body: ['Raleway', 'sans-serif'] },
+          boxShadow: { 'soft': '0 2px 8px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.04)', 'soft-lg': '0 4px 16px rgba(0,0,0,0.10), 0 8px 32px rgba(0,0,0,0.06)' },
+          borderRadius: { 'card': '12px' }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Raleway', sans-serif; background-color: #FAFAF5; color: #1A1A1A; }
+    h1, h2, h3, h4 { font-family: 'Lora', serif; }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  </style>
+  <script defer src="https://analytics.code-lieshout.nl/prikkel" data-website-id="da86629e-7202-473b-8f3f-7fbb4ee39190"></script>
+</head>
+<body class="bg-bg-main">
+
+  <!-- Navigation -->
+  <nav class="bg-primary shadow-soft sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+          <img src="images/header.png" alt="VC De Meeren logo" class="h-10 w-auto" loading="lazy">
+          <span class="font-heading font-bold text-white text-lg hidden sm:block">VC De Meeren</span>
+        </a>
+        <div class="hidden lg:flex items-center gap-1">
+          <a href="index.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Home</a>
+          <a href="over-ons.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Over Ons</a>
+          <a href="het-meer.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Het Meer</a>
+          <a href="geschiedenis.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Geschiedenis</a>
+          <a href="hengelsport.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Hengelsport</a>
+          <a href="karperbestand.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Karperbestand</a>
+          <a href="wedstrijdvissen.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Wedstrijden</a>
+          <a href="stekken.html" class="text-white/80 hover:text-white hover:bg-secondary/40 transition-all duration-200 px-3 py-2 rounded-lg text-sm font-medium cursor-pointer">Stekken</a>
+          <a href="contact.html" class="ml-2 bg-cta hover:bg-amber-600 text-white px-4 py-2 rounded-card text-sm font-semibold transition-all duration-200 cursor-pointer">Vergunning</a>
+        </div>
+        <button id="menu-btn" class="lg:hidden text-white p-2 rounded-lg hover:bg-secondary/40 transition-all duration-200 cursor-pointer" aria-label="Menu openen">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-primary border-t border-secondary/30">
+      <div class="px-4 py-3 space-y-1">
+        <a href="index.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Home</a>
+        <a href="over-ons.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Over Ons</a>
+        <a href="het-meer.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Het Meer</a>
+        <a href="geschiedenis.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Geschiedenis</a>
+        <a href="hengelsport.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Hengelsport</a>
+        <a href="karperbestand.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Karperbestand</a>
+        <a href="wedstrijdvissen.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Wedstrijden</a>
+        <a href="stekken.html" class="block text-white/80 px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary/40 transition-all duration-200 cursor-pointer">Stekken</a>
+        <a href="contact.html" class="block bg-cta text-white px-3 py-2 rounded-card text-sm font-semibold text-center mt-2 hover:bg-amber-600 transition-all duration-200 cursor-pointer">Vergunning aanvragen</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="py-20 bg-primary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-cta font-body font-semibold text-sm uppercase tracking-widest mb-3">VC De Meeren</p>
+      <h1 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white mb-4">Reglement</h1>
+      <p class="font-body text-white/80 text-lg max-w-2xl mx-auto">Iedere visser is verplicht zichzelf op de hoogte te stellen van ons reglement en dient zich daaraan te houden.</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-cta/10 border border-cta/20 rounded-card p-6">
+        <div class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-cta flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          <p class="font-body text-text-main text-sm leading-relaxed">
+            Om het welzijn van de omgeving en haar bewoners te beschermen zijn er een aantal regels opgesteld. Bij misstanden omtrent het reglement of m.b.t. andere zaken, maak foto's en neem contact via het email adres van de meeren. Mocht er een viswedstrijd plaatsvinden, dan kan het zijn dat er andere regels van toepassing zijn.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Karpervissen reglement -->
+  <section class="py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary mb-8 flex items-center gap-3">
+        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Karpervissen
+      </h2>
+      <div class="bg-card-bg rounded-card shadow-soft p-8">
+        <ul class="space-y-3">
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Het welzijn van de vissen en de omgeving waarin zij leven staat voorop.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Op de stekken waar gevist wordt dienen een onthaakmat en groot schepnet aanwezig te zijn.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Indien beschikbaar gebruik maken van door VC De Meeren aangeboden onthaakmat, weegzak en landingsnet.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Goede, grote onthaakmat gebruiken!</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Behandel de vissen met respect! Karper nat houden tijdens fotograferen, til uw vangst nooit te hoog op, houd karpers altijd boven de onthaakmat en let op de vinnen tijdens het optillen in schepnet en weegzak.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Gevangen karper snel en onbeschadigd terugzetten.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Van diefstal/vis-diefstal of poging daartoe zal altijd aangifte worden gedaan.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Vissen met gevlochten hoofdlijn en voorslag van minimaal 7,5m toegestaan.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Vissen met vast-lood systemen verboden.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Gebruik van zogenaamde "benthooks" verboden.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Gebruik van haken met en zonder weerhaak toegestaan, microbarb sterk aanbevolen!</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Vissen met maximaal 3 hengels toegestaan.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>De stek niet onbeheerd achterlaten wanneer er nog lijnen in liggen.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Houd rekening met eventuele witvissers.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Nachtvissen alleen vanaf de hiervoor aangegeven stekken.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Niet vissen rondom de op het kaartje aangegeven obstakels.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Vissen in het duikgebied is voor NIEMAND toegestaan.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Gebruik van boot is sterk aanbevolen op stek 1 t/m 8 en in tijden met veel wier is boot gebruik verplicht.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Electromotor en accu bij bootgebruik is verplicht. Visvinder is toegestaan.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Gebruik van een voerboot is toegestaan.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Het uitlopen van lijnen met een waadpak is verboden.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Karper landen vanuit de boot wenselijk i.v.m. wiergroei en extreme diepteverschillen.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Auto parkeren op de parkeerplaats, geen auto's op de stek.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Geen schade toebrengen aan natuur en begroeiing.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Laat onze oever schoon achter. Ook bierdopjes, peuken en lijnresten horen in de vuilniszak.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Open vuur verboden. Barbecue is toegestaan, ook barbecue resten horen in de vuilniszak.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Vissen op de andere plassen in het gebied is streng verboden. Deze zijn eigendom van stichting Natuurmonumenten en worden goed bewaakt door de daar aanwezige BOA's.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Het tussentijds verlaten van het terrein dient te geschiede door de uitgang aan de Uilweg of Grinderijweg.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Het is verboden om op het werkterrein te komen.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-cta rounded-full mt-2 flex-shrink-0"></span>Maximaal 2 glazen alcohol per dag.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Gebruik van drugs/verdovende middelen verboden.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Het gebruik van foto- en/of video-apparatuur voor commerciële doeleinden is uitsluitend toegestaan bij overleg en instemming van het bestuur.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Bij het in gebruik nemen van een stek, houd rekening met andere vissers.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Zwemmen verboden.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Honden ten allen tijden aanlijnen, hondenpoep opruimen.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Het gebruik van een reddingsvest is verplicht.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Witvissen reglement -->
+  <section class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary mb-8 flex items-center gap-3">
+        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Witvissen
+      </h2>
+      <div class="bg-card-bg rounded-card shadow-soft p-8">
+        <ul class="space-y-3">
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>De ingang van VC de Meeren is gelegen aan de Uilweg of Grinderijweg (zie stekkenkaart). Dus NOOIT via de ingang van het bedrijventerrein Thijssen.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Jeugdige vissers onder de 18 jaar mogen alleen vissen onder de begeleiding van een volwassen vergunninghouder.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Elke nieuwe vergunninghouder ontvangt eenmalig een exemplaar van het reglement.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Elke vergunninghouder onderwerpt zich aan het reglement en wordt geacht dit te kennen en ondertekenen.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>De vispas van VC de Meeren kan ter controle alleen door leden van het bestuur of de witviscommissie ter inzage opgevraagd worden.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Alle aanwijzingen door gemachtigden van de vereniging dienen stipt opgevolgd te worden.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-cta rounded-full mt-2 flex-shrink-0"></span>Bij overtreding van het reglement heeft het bestuur de bevoegdheid een sanctie op te leggen. In het ergste geval royement — restitutie in GEEN geval mogelijk!</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>De vergunning loopt van 1 januari tot 31 december, is persoonsgebonden en niet overdraagbaar.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Het lidmaatschap eindigt door: schriftelijke opzegging, overlijden of wangedrag ten opzichte van de club.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Er mag gevist worden met maximaal 2 hengels met 1 haak per hengel.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Een witvisser mag NIET gericht op karper vissen.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Indien je de gevangen vis tijdelijk wilt bewaren, dient dit te gebeuren in een leefnet van zacht materiaal. Minimale doorsnede van 40 cm en minimale lengte van 2 meter.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Het is NIET toegestaan vis mee te nemen of uit te zetten.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>Men mag de natuur niet aantasten of verstoren.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Het is verboden water en/of oevers te vervuilen, te beschadigen en/of rommel achter te laten.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Het gebruik van barbecue of open vuur is in de bosrand verboden.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Het is verboden te witvissen op de op het stekkenkaartje als verboden aangegeven stekken.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aansprakelijkheid -->
+  <section class="py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary mb-8 flex items-center gap-3">
+        <svg class="w-8 h-8 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+        Aansprakelijkheid &amp; Veiligheid
+      </h2>
+      <div class="bg-card-bg rounded-card shadow-soft p-8">
+        <ul class="space-y-3">
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-cta rounded-full mt-2 flex-shrink-0"></span>Het terrein van de Meeren betreden op eigen risico.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-cta rounded-full mt-2 flex-shrink-0"></span>VC de Meeren stelt zich niet aansprakelijk voor persoonlijk letsel.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-cta rounded-full mt-2 flex-shrink-0"></span>VC de Meeren stelt zich niet aansprakelijk voor diefstal van- of schade aan uw eigendommen.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Nog geen 18? Alleen vissen onder begeleiding van een volwassene.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Blijf uit de buurt van de op de zuid-oever aanwezige materialen, deze zijn erg zwaar en vaak onstabiel.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Ga nooit in je waadpak het water op!</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-cta rounded-full mt-2 flex-shrink-0"></span>Door de grote waterdiepte kunnen watertemperaturen sterk verschillen, pas daarom op voor kramp wanneer je onverhoopt te water raakt.</li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>De ondiepe noord-oosthoek niet betreden! Kans op drijfzand.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vis meenemen -->
+  <section class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary mb-8">Meenemen &amp; Uitzetting Vis</h2>
+      <div class="bg-red-50 border border-red-200 rounded-card p-8">
+        <ul class="space-y-3">
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span><strong>Het is streng verboden om vis te doden of mee te nemen.</strong></li>
+          <li class="font-body text-text-main text-sm flex items-start gap-3"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>Uitzettingen worden enkel gedaan door het bestuur. Neem hierin zelf geen initiatief, dit kan grote schade aan het water tot gevolg hebben.</li>
+        </ul>
+        <div class="mt-6 pt-4 border-t border-red-200">
+          <p class="font-body text-red-700 text-sm font-semibold">Bij overtreding van deze regels behoudt VC de Meeren het recht de overtreder van het water te verwijderen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-footer-bg text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="images/header.png" alt="VC De Meeren logo" class="h-10 w-auto" loading="lazy">
+            <span class="font-heading font-bold text-lg">VC De Meeren</span>
+          </div>
+          <p class="font-body text-white/70 text-sm leading-relaxed">Vissen zoals vissen behoort te zijn.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-base mb-4">Pagina's</h4>
+          <ul class="space-y-2">
+            <li><a href="over-ons.html" class="font-body text-white/70 hover:text-cta transition-all duration-200 text-sm cursor-pointer">Over Ons</a></li>
+            <li><a href="het-meer.html" class="font-body text-white/70 hover:text-cta transition-all duration-200 text-sm cursor-pointer">Het Meer</a></li>
+            <li><a href="hengelsport.html" class="font-body text-white/70 hover:text-cta transition-all duration-200 text-sm cursor-pointer">Hengelsport</a></li>
+            <li><a href="stekken.html" class="font-body text-white/70 hover:text-cta transition-all duration-200 text-sm cursor-pointer">Stekken</a></li>
+            <li><a href="contact.html" class="font-body text-white/70 hover:text-cta transition-all duration-200 text-sm cursor-pointer">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-base mb-4">Contact</h4>
+          <ul class="space-y-2 font-body text-white/70 text-sm">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              Uilweg, 5453 JD Langenboom
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-8 pt-8 text-center">
+        <p class="font-body text-white/50 text-sm">© 2026 VC De Meeren. Gebouwd door <a href="https://www.code-lieshout.nl" class="hover:text-cta transition-all duration-200 cursor-pointer underline">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
